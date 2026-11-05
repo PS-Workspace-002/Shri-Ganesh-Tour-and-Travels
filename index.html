@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Ganesh Tour & Travels — Premium Puri Taxi & Odisha Tours</title>
+<meta name="description" content="Premium taxi service and curated Odisha tours from Puri. Konark, Chilika, Bhubaneswar, Jagannath Temple tours. Govt. Regd No. 26201700144/2017. Call +91 84807 22669.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3f2b1c81b871.jpg">
+<style>
+:root {
+  --bg-base: #FBF8F1;
+  --bg-sand: #F5EFE2;
+  --bg-surface: #FFFFFF;
+  --bg-tint: #E8F3F2;
+  --bg-warm: #FFF6EC;
+  --teal: #0E7C7B;
+  --teal-dark: #0A5E5D;
+  --teal-light: #2A9D8F;
+  --coral: #E76F51;
+  --coral-dark: #C8553D;
+  --coral-light: #F4A261;
+  --gold: #C9A063;
+  --navy: #1A3A4A;
+  --navy-soft: #2C4F60;
+  --text: #1A3A4A;
+  --text-muted: #6B7E8A;
+  --text-light: #95A5B1;
+  --border: #E5DDD0;
+  --border-soft: #F0E9DC;
+  --shadow-sm: 0 2px 8px rgba(26,58,74,0.06);
+  --shadow-md: 0 8px 24px rgba(26,58,74,0.10);
+  --shadow-lg: 0 20px 50px rgba(26,58,74,0.14);
+  --shadow-teal: 0 8px 24px rgba(14,124,123,0.25);
+  --shadow-coral: 0 8px 24px rgba(231,111,81,0.25);
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --whatsapp: #25D366;
+  --call: #0E7C7B;
+}
+* { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:'Plus Jakarta Sans',sans-serif;
+  background:var(--bg-base);
+  color:var(--text);
+  overflow-x:hidden;
+  line-height:1.6;
+  cursor:none;
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(14,124,123,0.04) 0%, transparent 35%),
+    radial-gradient(circle at 100% 30%, rgba(231,111,81,0.04) 0%, transparent 35%),
+    radial-gradient(circle at 50% 100%, rgba(201,160,99,0.03) 0%, transparent 40%);
+  background-attachment:fixed;
+}
+h1,h2,h3,h4 { font-family:'Playfair Display',serif; font-weight:700; color:var(--navy); line-height:1.2; }
+::selection { background:var(--coral); color:#fff; }
+img { max-width:100%; display:block; }
+a { text-decoration:none; color:inherit; }
+
+/* INTRO SCREEN */
+#intro-screen {
+  position:fixed; inset:0; background:linear-gradient(135deg,#0A5E5D,#1A3A4A); z-index:99999;
+  display:flex; justify-content:center; align-items:center; overflow:hidden;
+  transition:opacity .9s ease, visibility .9s ease;
+}
+#intro-screen.hide { opacity:0; visibility:hidden; }
+.intro-waves { position:absolute; inset:0; opacity:.5; }
+.intro-waves::before, .intro-waves::after {
+  content:''; position:absolute; bottom:0; left:0; right:0; height:50%;
+  background:radial-gradient(ellipse at bottom, rgba(244,162,97,.3), transparent 70%);
+  animation:wave 3.5s ease-in-out infinite;
+}
+.intro-waves::after { animation-delay:.7s; opacity:.6; }
+@keyframes wave { 0%,100%{transform:translateY(0) scale(1);} 50%{transform:translateY(-15px) scale(1.05);} }
+.car-container { position:absolute; bottom:25%; left:-300px; animation:driveCar 3.5s cubic-bezier(.25,1,.5,1) forwards; z-index:2; }
+.car-svg { width:240px; height:auto; filter:drop-shadow(0 8px 24px rgba(244,162,97,.6)); }
+.headlight-beam {
+  position:absolute; top:55%; left:90%; width:380px; height:90px;
+  background:linear-gradient(90deg, rgba(255,236,179,.9), transparent);
+  clip-path:polygon(0 40%,100% 0,100% 100%,0 60%);
+  transform:translateY(-50%); opacity:.7;
+}
+@keyframes driveCar {
+  0%{left:-300px; transform:scale(.85);}
+  55%{left:50%; transform:translateX(-50%) scale(1);}
+  100%{left:120%; transform:scale(1.1);}
+}
+.intro-text {
+  position:absolute; top:25%; left:50%; transform:translateX(-50%);
+  color:#F4A261; font-family:'Playfair Display',serif; font-size:clamp(20px,4vw,32px);
+  letter-spacing:6px; text-align:center; opacity:0; animation:fadeInOut 3.5s ease forwards;
+  text-shadow:0 4px 20px rgba(0,0,0,.4);
+}
+.intro-text small { display:block; font-size:13px; letter-spacing:8px; margin-top:10px; color:rgba(255,255,255,.6); font-family:'Plus Jakarta Sans',sans-serif; font-weight:500; }
+@keyframes fadeInOut {
+  0%,25%{opacity:0; transform:translateX(-50%) translateY(20px);}
+  45%,80%{opacity:1; transform:translateX(-50%) translateY(0);}
+  100%{opacity:0; transform:translateX(-50%) translateY(-20px);}
+}
+
+/* CUSTOM CURSOR */
+.cursor { width:18px; height:18px; border:2px solid var(--teal); border-radius:50%; position:fixed; pointer-events:none; z-index:9999; transition:transform .12s ease, background .2s, border-color .2s; transform:translate(-50%,-50%); box-shadow:0 0 12px rgba(14,124,123,.4); }
+.cursor.hover { transform:translate(-50%,-50%) scale(1.6); background:rgba(14,124,123,.2); border-color:var(--coral); }
+@media (max-width:900px){ body{cursor:auto;} .cursor{display:none;} }
+
+#progress-bar { position:fixed; top:0; left:0; height:3px; background:linear-gradient(90deg, var(--teal), var(--coral-light), var(--coral)); width:0%; z-index:9999; box-shadow:0 0 12px rgba(231,111,81,.4); }
+
+/* NAVIGATION */
+nav {
+  position:fixed; top:0; left:0; right:0; padding:16px 5%;
+  display:flex; justify-content:space-between; align-items:center; z-index:1000;
+  background:rgba(251,248,241,.85); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border-soft); transition:all .35s ease;
+}
+nav.scrolled { padding:12px 5%; background:rgba(251,248,241,.97); box-shadow:var(--shadow-sm); }
+.logo { display:flex; flex-direction:column; line-height:1.1; font-family:'Playfair Display',serif; font-size:24px; font-weight:700; color:var(--navy); transition:all .3s; }
+.logo span { color:var(--teal); font-family:'Plus Jakarta Sans',sans-serif; font-size:10px; letter-spacing:2.5px; text-transform:uppercase; margin-top:3px; font-weight:700; }
+.logo:hover { transform:scale(1.03); }
+.logo:hover .logo-main { color:var(--coral); }
+.nav-right { display:flex; align-items:center; gap:18px; }
+.nav-links { display:flex; gap:22px; align-items:center; }
+.nav-links a { color:var(--text); font-size:14px; font-weight:600; transition:color .25s; position:relative; }
+.nav-links a:not(.btn-gold)::after { content:''; position:absolute; bottom:-4px; left:0; width:0; height:2px; background:var(--coral); transition:width .3s; }
+.nav-links a:not(.btn-gold):hover { color:var(--coral); }
+.nav-links a:not(.btn-gold):hover::after { width:100%; }
+.lang-switcher { display:flex; gap:3px; background:var(--bg-sand); border:1px solid var(--border); padding:4px; border-radius:50px; }
+.lang-btn { background:transparent; border:none; color:var(--text-muted); font-size:11px; font-weight:800; padding:6px 12px; border-radius:50px; cursor:pointer; transition:all .25s; letter-spacing:.5px; }
+.lang-btn:hover { color:var(--navy); }
+.lang-btn.active { background:var(--teal); color:#fff; box-shadow:0 2px 8px rgba(14,124,123,.3); }
+
+/* BUTTONS */
+.btn-gold {
+  padding:11px 24px; border-radius:50px;
+  background:linear-gradient(135deg, var(--coral), var(--coral-light)); color:#fff;
+  font-weight:700; font-size:14px; transition:all .3s; display:inline-flex; align-items:center; gap:6px;
+  box-shadow:var(--shadow-coral); position:relative; overflow:hidden;
+}
+.btn-gold::after {
+  content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%;
+  background:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.4) 50%, rgba(255,255,255,0) 100%);
+  transform:rotate(45deg) translateX(-100%); animation:shimmer 4s infinite;
+}
+@keyframes shimmer { 100%{transform:rotate(45deg) translateX(150%);} }
+.btn-gold:hover { transform:translateY(-2px); box-shadow:0 12px 28px rgba(231,111,81,.4); }
+.btn-teal {
+  padding:11px 24px; border-radius:50px; background:var(--teal); color:#fff;
+  font-weight:700; font-size:14px; transition:all .3s; display:inline-flex; align-items:center; gap:6px;
+  box-shadow:var(--shadow-teal); border:none; cursor:pointer;
+}
+.btn-teal:hover { transform:translateY(-2px); background:var(--teal-dark); box-shadow:0 12px 28px rgba(14,124,123,.4); }
+
+/* HERO */
+.hero { min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; position:relative; padding:120px 5% 80px; overflow:hidden; }
+.hero-bg { position:absolute; inset:0; z-index:0; }
+.hero-bg img { width:100%; height:100%; object-fit:cover; }
+.hero-bg::after { content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(251,248,241,.4) 0%, rgba(26,58,74,.55) 60%, rgba(26,58,74,.85) 100%); }
+.hero-content { position:relative; z-index:2; max-width:920px; }
+.hero .badge {
+  display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.95); color:var(--teal-dark);
+  padding:8px 18px; border-radius:50px; font-size:11px; font-weight:800; letter-spacing:2px; margin-bottom:28px;
+  backdrop-filter:blur(10px); box-shadow:var(--shadow-sm); animation:pulse-border 2.5s infinite;
+}
+.hero .badge::before { content:'✓'; background:var(--teal); color:#fff; width:18px; height:18px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:11px; }
+@keyframes pulse-border { 0%{box-shadow:0 0 0 0 rgba(14,124,123,.4);} 70%{box-shadow:0 0 0 14px rgba(14,124,123,0);} 100%{box-shadow:0 0 0 0 rgba(14,124,123,0);} }
+.hero h1 { font-size:clamp(2.5rem,6.5vw,5.5rem); color:#fff; margin-bottom:24px; text-shadow:0 10px 30px rgba(0,0,0,.4); }
+.hero h1 span { color:var(--coral-light); font-style:italic; }
+.hero p { font-size:clamp(15px,1.6vw,19px); color:rgba(255,255,255,.92); margin-bottom:38px; max-width:680px; margin-left:auto; margin-right:auto; line-height:1.7; text-shadow:0 2px 12px rgba(0,0,0,.5); }
+.hero-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:60px; }
+.hero-btns .btn-gold, .hero-btns .btn-teal { padding:16px 32px; font-size:15px; }
+.hero-stats {
+  display:grid; grid-template-columns:repeat(4,1fr); gap:18px; max-width:780px; margin:0 auto;
+  background:rgba(255,255,255,.1); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,.18); border-radius:var(--radius-lg); padding:24px 16px;
+}
+.hero-stat .hs-num { font-family:'Playfair Display',serif; font-size:clamp(22px,3vw,32px); font-weight:700; color:#fff; }
+.hero-stat .hs-lbl { font-size:11px; color:rgba(255,255,255,.85); text-transform:uppercase; letter-spacing:1.5px; margin-top:4px; font-weight:600; }
+@media (max-width:600px){ .hero-stats{grid-template-columns:repeat(2,1fr); gap:14px;} }
+
+/* SECTIONS */
+section { padding:90px 5%; position:relative; }
+.section-header { text-align:center; max-width:760px; margin:0 auto 56px; }
+.section-header .eyebrow { color:var(--coral); font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:4px; margin-bottom:14px; display:inline-flex; align-items:center; gap:10px; }
+.section-header .eyebrow::before, .section-header .eyebrow::after { content:''; width:24px; height:2px; background:var(--coral); display:inline-block; }
+.section-header h2 { font-size:clamp(2rem,4vw,3rem); margin-bottom:16px; }
+.section-header .sub { color:var(--text-muted); font-size:16px; line-height:1.6; max-width:600px; margin:0 auto; }
+
+/* WHY CHOOSE US */
+.why-section { background:linear-gradient(180deg, var(--bg-base), var(--bg-warm)); }
+.why-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:24px; max-width:1200px; margin:0 auto; }
+.why-card { background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:var(--radius-lg); padding:32px 26px; text-align:center; transition:all .35s cubic-bezier(.16,1,.3,1); box-shadow:var(--shadow-sm); }
+.why-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-md); border-color:var(--teal-light); }
+.why-icon { width:64px; height:64px; margin:0 auto 18px; background:var(--bg-tint); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:28px; transition:all .35s; }
+.why-card:hover .why-icon { background:var(--coral); transform:scale(1.1) rotate(5deg); }
+.why-card h3 { font-size:19px; margin-bottom:10px; color:var(--navy); }
+.why-card p { font-size:14px; color:var(--text-muted); line-height:1.6; }
+
+/* PACKAGES */
+.package-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(330px,1fr)); gap:28px; max-width:1200px; margin:0 auto; perspective:1000px; }
+.package-card { background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:var(--radius-lg); overflow:hidden; transition:all .4s cubic-bezier(.16,1,.3,1); display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transform-style:preserve-3d; }
+.package-card:hover { box-shadow:var(--shadow-lg); border-color:var(--teal-light); }
+.pkg-img-wrap { position:relative; height:220px; overflow:hidden; background:var(--bg-sand); }
+.pkg-img { width:100%; height:100%; object-fit:cover; transition:transform .6s ease; }
+.package-card:hover .pkg-img { transform:scale(1.08); }
+.pkg-duration { position:absolute; top:14px; right:14px; background:rgba(26,58,74,.92); color:#fff; padding:6px 14px; border-radius:50px; font-size:11px; font-weight:700; letter-spacing:.5px; backdrop-filter:blur(8px); }
+.pkg-content { padding:26px 24px 24px; flex:1; display:flex; flex-direction:column; }
+.package-card h3 { font-size:22px; margin-bottom:6px; color:var(--navy); }
+.package-card .subtitle { font-size:12px; color:var(--coral); margin-bottom:18px; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; }
+.features-list { list-style:none; margin-bottom:24px; flex:1; }
+.features-list li { margin-bottom:10px; color:var(--text); display:flex; align-items:flex-start; gap:10px; font-size:14px; font-weight:500; line-height:1.5; }
+.features-list li::before { content:'✓'; color:#fff; background:var(--teal); font-weight:bold; font-size:11px; width:20px; height:20px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; flex-shrink:0; margin-top:2px; }
+.btn-book {
+  width:100%; padding:13px; border-radius:12px; background:var(--bg-tint); border:1.5px solid var(--teal); color:var(--teal-dark);
+  font-weight:700; font-size:14px; cursor:pointer; transition:all .3s; text-align:center; display:block;
+}
+.btn-book:hover { background:var(--teal); color:#fff; box-shadow:var(--shadow-teal); transform:translateY(-1px); }
+
+/* FLEET */
+.fleet-section { background:linear-gradient(180deg, var(--bg-warm), var(--bg-base)); }
+.fleet-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:24px; max-width:1200px; margin:0 auto; }
+.fleet-card { background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:var(--radius-lg); overflow:hidden; transition:all .35s cubic-bezier(.16,1,.3,1); box-shadow:var(--shadow-sm); display:flex; flex-direction:column; }
+.fleet-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-lg); border-color:var(--coral-light); }
+.fleet-img-wrap { position:relative; height:180px; overflow:hidden; background:var(--bg-sand); }
+.fleet-img-wrap img { width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
+.fleet-card:hover .fleet-img-wrap img { transform:scale(1.06); }
+.fleet-icon { position:absolute; top:12px; left:12px; width:44px; height:44px; background:rgba(255,255,255,.95); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:22px; box-shadow:var(--shadow-sm); }
+.fleet-content { padding:22px 20px; flex:1; display:flex; flex-direction:column; }
+.fleet-content h3 { font-size:18px; margin-bottom:14px; color:var(--navy); }
+.fleet-specs { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:14px; }
+.fleet-specs .spec { background:var(--bg-sand); padding:8px 6px; border-radius:10px; text-align:center; font-size:11px; font-weight:600; color:var(--text-muted); display:flex; flex-direction:column; gap:3px; }
+.fleet-specs .spec-ico { font-size:16px; }
+.fleet-best { font-size:13px; color:var(--teal-dark); font-weight:600; margin-bottom:12px; padding:8px 12px; background:var(--bg-tint); border-radius:8px; border-left:3px solid var(--teal); }
+.fleet-price { font-family:'Playfair Display',serif; font-size:24px; color:var(--coral); font-weight:700; margin-bottom:16px; margin-top:auto; }
+.fleet-price::before { content:'Starting '; font-family:'Plus Jakarta Sans',sans-serif; font-size:11px; color:var(--text-muted); font-weight:600; display:block; }
+
+/* CUSTOM BUILDER */
+.custom-builder { background:linear-gradient(180deg, var(--bg-base), var(--bg-tint)); }
+.builder-container { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:2fr 1fr; gap:36px; align-items:start; }
+.destinations-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(160px,1fr)); gap:14px; perspective:1000px; }
+.dest-select-card {
+  background-color:var(--bg-sand); background-size:cover; background-position:center;
+  border:2px solid var(--border); border-radius:var(--radius-md); padding:22px 12px; cursor:pointer;
+  transition:all .3s cubic-bezier(.16,1,.3,1); display:flex; flex-direction:column; align-items:center; text-align:center;
+  gap:6px; user-select:none; position:relative; overflow:hidden; min-height:160px; justify-content:center;
+}
+.dest-select-card::before { content:''; position:absolute; inset:0; background:linear-gradient(to top, rgba(26,58,74,.92), rgba(26,58,74,.35)); z-index:1; transition:opacity .3s; }
+.dest-select-card:hover { border-color:var(--coral); transform:translateY(-3px); box-shadow:var(--shadow-md); }
+.dest-select-card:hover::before { background:linear-gradient(to top, rgba(26,58,74,.85), rgba(26,58,74,.25)); }
+.dest-select-card.selected { border-color:var(--teal); box-shadow:0 0 0 3px rgba(14,124,123,.2), var(--shadow-md); }
+.dest-select-card.selected::before { background:linear-gradient(to top, rgba(14,124,123,.55), rgba(26,58,74,.4)); }
+.dest-select-card.selected::after { content:'✓'; position:absolute; top:8px; right:8px; background:var(--teal); color:#fff; width:24px; height:24px; border-radius:50%; font-size:13px; font-weight:900; display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow-sm); animation:popIn .3s cubic-bezier(.175,.885,.32,1.275); z-index:3; }
+.dest-select-card > * { position:relative; z-index:2; }
+.dest-select-card .icon { font-size:26px; text-shadow:0 2px 6px rgba(0,0,0,.6); transition:transform .3s; }
+.dest-select-card:hover .icon { transform:scale(1.2) translateY(-3px); }
+.dest-select-card .name { font-size:13px; font-weight:700; color:#fff; line-height:1.3; text-shadow:0 2px 6px rgba(0,0,0,.7); }
+.dest-select-card .zone { font-size:9px; color:var(--coral-light); text-transform:uppercase; letter-spacing:1px; font-weight:800; text-shadow:0 2px 6px rgba(0,0,0,.7); }
+
+.summary-sidebar { background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:var(--radius-lg); padding:28px; position:sticky; top:100px; box-shadow:var(--shadow-md); }
+.summary-sidebar h3 { font-size:20px; margin-bottom:18px; padding-bottom:14px; border-bottom:2px solid var(--bg-sand); color:var(--navy); display:flex; align-items:center; gap:8px; }
+.summary-sidebar h3::before { content:'🧳'; font-size:22px; }
+.selected-list { list-style:none; margin-bottom:18px; max-height:260px; overflow-y:auto; padding-right:4px; }
+.selected-list::-webkit-scrollbar { width:6px; }
+.selected-list::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+.selected-list li { font-size:14px; color:var(--text); margin-bottom:10px; display:flex; justify-content:space-between; align-items:center; animation:slideInRight .3s ease; padding:8px 10px; background:var(--bg-sand); border-radius:8px; }
+.selected-list li span { color:var(--teal); font-size:11px; background:var(--bg-tint); padding:2px 8px; border-radius:10px; font-weight:700; }
+.empty-msg { font-size:14px; color:var(--text-muted); font-style:italic; margin-bottom:18px; line-height:1.6; text-align:center; padding:20px 10px; background:var(--bg-sand); border-radius:10px; border:1px dashed var(--border); }
+.btn-whatsapp-action {
+  width:100%; padding:15px; border-radius:12px; background:linear-gradient(135deg, #25D366, #128C7E); color:#fff;
+  font-weight:700; font-size:15px; border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:10px;
+  transition:all .3s; box-shadow:0 8px 20px rgba(37,211,102,.25);
+}
+.btn-whatsapp-action:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 12px 26px rgba(37,211,102,.4); }
+.btn-whatsapp-action:disabled { background:var(--bg-sand); color:var(--text-light); cursor:not-allowed; box-shadow:none; border:1px solid var(--border); }
+
+/* GALLERY */
+.gallery-section { background:var(--bg-base); }
+.gallery-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:14px; max-width:1200px; margin:0 auto; }
+.gallery-item { position:relative; aspect-ratio:4/3; overflow:hidden; border-radius:var(--radius-md); cursor:pointer; background:var(--bg-sand); box-shadow:var(--shadow-sm); }
+.gallery-item img { width:100%; height:100%; object-fit:cover; transition:transform .6s ease; }
+.gallery-item:hover img { transform:scale(1.1); }
+.gallery-zoom { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(14,124,123,.4); color:#fff; font-size:28px; opacity:0; transition:opacity .3s; }
+.gallery-item:hover .gallery-zoom { opacity:1; }
+.gallery-item:nth-child(3n+1) { grid-row:span 2; aspect-ratio:3/4; }
+
+/* LIGHTBOX */
+.lightbox { position:fixed; inset:0; background:rgba(10,30,40,.95); z-index:99999; display:none; align-items:center; justify-content:center; padding:5%; }
+.lightbox.open { display:flex; animation:fadeIn .3s ease; }
+.lightbox img { max-width:90%; max-height:85vh; border-radius:12px; box-shadow:0 20px 60px rgba(0,0,0,.6); }
+.lightbox-close { position:absolute; top:24px; right:24px; width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,.15); color:#fff; border:none; cursor:pointer; font-size:24px; display:flex; align-items:center; justify-content:center; transition:all .25s; }
+.lightbox-close:hover { background:var(--coral); transform:rotate(90deg); }
+.lightbox-nav { position:absolute; top:50%; transform:translateY(-50%); width:50px; height:50px; border-radius:50%; background:rgba(255,255,255,.15); color:#fff; border:none; cursor:pointer; font-size:24px; display:flex; align-items:center; justify-content:center; transition:all .25s; }
+.lightbox-nav:hover { background:var(--teal); }
+.lightbox-prev { left:24px; }
+.lightbox-next { right:24px; }
+@keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
+
+/* TESTIMONIALS */
+.testi-section { background:linear-gradient(180deg, var(--bg-warm), var(--bg-base)); }
+.testi-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(330px,1fr)); gap:24px; max-width:1200px; margin:0 auto; }
+.testi-card { background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:var(--radius-lg); padding:30px 26px; box-shadow:var(--shadow-sm); transition:all .35s; position:relative; }
+.testi-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); }
+.testi-card::before { content:'"'; position:absolute; top:8px; right:24px; font-family:'Playfair Display',serif; font-size:80px; color:var(--bg-tint); line-height:1; z-index:0; }
+.testi-stars { color:var(--coral-light); font-size:18px; margin-bottom:14px; letter-spacing:2px; position:relative; z-index:1; }
+.testi-text { font-size:14px; color:var(--text); line-height:1.7; margin-bottom:20px; position:relative; z-index:1; }
+.testi-author { display:flex; align-items:center; gap:12px; padding-top:16px; border-top:1px solid var(--border-soft); }
+.testi-author img { width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid var(--teal-light); }
+.testi-name { font-weight:700; color:var(--navy); font-size:14px; }
+.testi-city { font-size:12px; color:var(--text-muted); }
+
+/* FAQ */
+.faq-section { background:var(--bg-base); }
+.faq-container { max-width:820px; margin:0 auto; }
+.faq-item { background:var(--bg-surface); border:1px solid var(--border-soft); border-radius:var(--radius-md); margin-bottom:12px; overflow:hidden; transition:all .25s; box-shadow:var(--shadow-sm); }
+.faq-item.open { border-color:var(--teal-light); box-shadow:var(--shadow-md); }
+.faq-q { width:100%; padding:20px 24px; background:none; border:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:14px; text-align:left; font-family:inherit; font-size:15px; font-weight:700; color:var(--navy); }
+.faq-icon { font-size:22px; color:var(--coral); font-weight:400; transition:transform .3s; flex-shrink:0; }
+.faq-item.open .faq-icon { transform:rotate(45deg); color:var(--teal); }
+.faq-a { max-height:0; overflow:hidden; transition:max-height .35s ease; }
+.faq-item.open .faq-a { max-height:400px; }
+.faq-a p { padding:0 24px 22px; font-size:14px; color:var(--text-muted); line-height:1.7; }
+
+/* MAP */
+.location-section { background:var(--bg-sand); padding:80px 5%; }
+.map-container { max-width:1000px; margin:0 auto; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-lg); border:6px solid var(--bg-surface); position:relative; background:var(--bg-surface); }
+.map-container iframe { width:100%; height:420px; border:none; display:block; filter:saturate(.85) contrast(.95); }
+.map-overlay { position:absolute; bottom:24px; left:24px; right:24px; background:var(--bg-surface); padding:18px 22px; border-radius:var(--radius-md); box-shadow:var(--shadow-md); display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+.map-overlay .mo-icon { width:48px; height:48px; background:var(--coral); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0; }
+.map-overlay .mo-text { flex:1; min-width:200px; }
+.map-overlay .mo-text strong { display:block; font-size:15px; color:var(--navy); margin-bottom:2px; }
+.map-overlay .mo-text span { font-size:13px; color:var(--text-muted); }
+.map-overlay .btn-teal { padding:10px 20px; font-size:13px; }
+
+/* FOOTER */
+footer { background:linear-gradient(180deg, var(--navy), #0F2A38); color:#fff; padding:70px 5% 30px; }
+.footer-content { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:40px; max-width:1200px; margin:0 auto 50px; }
+.footer-col h4 { font-size:16px; margin-bottom:18px; color:#fff; font-family:'Plus Jakarta Sans',sans-serif; letter-spacing:.5px; font-weight:700; }
+.footer-col p, .footer-col a { color:rgba(255,255,255,.7); margin-bottom:10px; font-size:14px; line-height:1.7; display:flex; align-items:flex-start; gap:10px; transition:color .25s; }
+.footer-col a:hover { color:var(--coral-light); }
+.footer-col .logo { color:#fff; margin-bottom:14px; }
+.footer-col .logo span { color:var(--coral-light); }
+.footer-about p { color:rgba(255,255,255,.75); }
+.footer-info-val { color:#fff; font-weight:700; font-size:15px; margin-bottom:14px; }
+.footer-social { display:flex; gap:10px; margin-top:14px; }
+.footer-social a { width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,.1); display:flex; align-items:center; justify-content:center; transition:all .3s; }
+.footer-social a:hover { background:var(--coral); transform:translateY(-3px); }
+.footer-social svg { width:18px; height:18px; fill:#fff; }
+.copyright { text-align:center; padding-top:28px; border-top:1px solid rgba(255,255,255,.12); color:rgba(255,255,255,.55); font-size:13px; }
+
+/* FLOATING BUTTONS */
+.floating-group { position:fixed; bottom:32px; right:32px; display:flex; flex-direction:column; gap:14px; z-index:100; }
+.float-btn { width:56px; height:56px; border-radius:50px; display:flex; align-items:center; justify-content:center; color:#FFF; transition:all .3s; position:relative; box-shadow:0 6px 20px rgba(0,0,0,.18); }
+.float-btn .float-label { display:none; }
+.float-btn:hover { transform:scale(1.1); color:#FFF; }
+.float-call { background:var(--teal); animation:pulse-call 2s infinite; }
+.float-wa { background:var(--whatsapp); animation:pulse-wa 2s infinite; }
+.float-btn .tooltip { position:absolute; right:70px; background:var(--navy); color:#fff; padding:8px 14px; border-radius:8px; font-size:13px; font-weight:600; white-space:nowrap; opacity:0; pointer-events:none; transition:all .25s; transform:translateX(8px); }
+.float-btn:hover .tooltip { opacity:1; transform:translateX(0); }
+/* ANIMATIONS */
+@keyframes fadeUp { from{opacity:0; transform:translateY(40px);} to{opacity:1; transform:translateY(0);} }
+@keyframes slideInRight { from{opacity:0; transform:translateX(20px);} to{opacity:1; transform:translateX(0);} }
+@keyframes popIn { from{transform:scale(0);} to{transform:scale(1);} }
+@keyframes pulse-wa { 0%{box-shadow:0 0 0 0 rgba(37,211,102,.6);} 70%{box-shadow:0 0 0 16px rgba(37,211,102,0);} 100%{box-shadow:0 0 0 0 rgba(37,211,102,0);} }
+@keyframes pulse-call { 0%{box-shadow:0 0 0 0 rgba(14,124,123,.6);} 70%{box-shadow:0 0 0 16px rgba(14,124,123,0);} 100%{box-shadow:0 0 0 0 rgba(14,124,123,0);} }
+.reveal { opacity:0; transform:translateY(40px); transition:all .8s cubic-bezier(.16,1,.3,1); }
+.reveal.active { opacity:1; transform:translateY(0); }
+
+/* MOBILE */
+.menu-btn { display:none; font-size:24px; background:none; border:none; color:var(--navy); cursor:pointer; }
+@media (max-width:900px){
+  body { padding-bottom: 90px; }
+  .builder-container{grid-template-columns:1fr;}
+  .summary-sidebar{position:relative; top:0;}
+  .nav-links{display:none; position:absolute; top:100%; left:0; right:0; background:rgba(251,248,241,.98); backdrop-filter:blur(20px); flex-direction:column; padding:24px 5%; border-bottom:1px solid var(--border); gap:14px;}
+  .nav-links.active{display:flex;}
+  .menu-btn{display:block;}
+  .nav-right{gap:10px;}
+  .lang-switcher{padding:3px;}
+  .lang-btn{padding:5px 9px; font-size:10px;}
+  .floating-group{bottom:0; right:0; left:0; flex-direction:row; justify-content:center; gap:0; background:rgba(26,58,74,.97); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); padding:10px 5%; border-top:1px solid rgba(255,255,255,.1); z-index:998; box-shadow:0 -4px 20px rgba(0,0,0,.15);}
+  .float-btn{width:auto; height:46px; flex:1; max-width:180px; border-radius:12px; margin:0 4px; animation:none; flex-direction:row; gap:8px; padding:0 16px; font-size:14px; font-weight:700;}
+  .float-btn .float-label{display:inline;}
+  .float-btn .tooltip{display:none;}
+  section{padding:70px 5% 50px;}
+  .gallery-item:nth-child(3n+1){grid-row:span 1; aspect-ratio:4/3;}
+  .hero-btns{flex-direction:column; align-items:center;}
+  .hero-btns .btn-gold, .hero-btns .btn-teal{width:100%; max-width:280px;}
+  .footer-content{gap:30px;}
+  footer{padding-bottom:20px;}
+}
+@media (max-width:600px){
+  .hero-stats{grid-template-columns:repeat(2,1fr); gap:14px;}
+  .destinations-grid{grid-template-columns:repeat(2,1fr); gap:10px;}
+  .fleet-specs{grid-template-columns:repeat(3,1fr);}
+  .testi-grid{grid-template-columns:1fr;}
+  .faq-q{font-size:14px; padding:18px 18px;}
+  .faq-a p{font-size:13px; padding:0 18px 18px;}
+  .map-overlay{flex-direction:column; text-align:center; gap:12px;}
+  .map-overlay .mo-text{min-width:0;}
+}
+</style>
+</head>
+<body onload="playIntro()">
+
+<!-- INTRO SCREEN -->
+<div id="intro-screen">
+  <div class="intro-waves"></div>
+  <div class="intro-text">SHREE GANESH<small>TOUR &amp; TRAVELS · PURI</small></div>
+  <div class="car-container">
+    <svg class="car-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#F4A261" d="M499.9,271.4L452,187.3c-8.4-14.9-24.3-24.1-41.2-24.1H168.2c-16.9,0-32.8,9.2-41.2,24.1L79.1,271.4c-8.1,14.3-12.5,30.4-12.5,47v65.2c0,17.7,14.3,32,32,32h18.6v24.5c0,12.5,10.2,22.7,22.7,22.7h34.1c12.5,0,22.7-10.2,22.7-22.7v-24.5h162.2v24.5c0,12.5,10.2,22.7,22.7,22.7h34.1c12.5,0,22.7-10.2,22.7-22.7v-24.5h18.6c17.7,0,32-14.3,32-32v-65.2C512,301.8,507.6,285.7,499.9,271.4z M405.9,207.6l30.9,54.3H75.2l30.9-54.3c2.5-4.4,7.3-7.2,12.4-7.2h274.8C400.9,200.4,405.7,203.2,405.9,207.6z M117.4,347.2c-13.8,0-25-11.2-25-25s11.2-25,25-25s25,11.2,25,25C142.4,336,131.2,347.2,117.4,347.2z M394.6,347.2c-13.8,0-25-11.2-25-25s11.2-25,25-25s25,11.2,25,25C419.6,336,408.4,347.2,394.6,347.2z"/>
+      <rect x="141" y="239" width="230" height="80" fill="#1A3A4A" rx="10"/>
+    </svg>
+    <div class="headlight-beam"></div>
+  </div>
+</div>
+
+<audio id="clickSound" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3" preload="auto"></audio>
+<audio id="carSound" src="https://assets.mixkit.co/active_storage/sfx/2501/2501-preview.mp3" preload="auto"></audio>
+
+<div class="cursor" id="cursor"></div>
+<div id="progress-bar"></div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a href="#home" class="logo"><span class="logo-main">Shree Ganesh</span><span>Tour &amp; Travels</span></a>
+  <div class="nav-right">
+    <div class="nav-links" id="navLinks">
+      <a href="#home" data-i18n="nav_home" onclick="toggleMenu()"></a>
+      <a href="#packages" data-i18n="nav_packages" onclick="toggleMenu()"></a>
+      <a href="#fleet" data-i18n="nav_fleet" onclick="toggleMenu()"></a>
+      <a href="#custom-builder" data-i18n="nav_custom" onclick="toggleMenu()"></a>
+      <a href="#gallery" data-i18n="nav_gallery" onclick="toggleMenu()"></a>
+      <a href="#faq" data-i18n="nav_faq" onclick="toggleMenu()"></a>
+      <a href="#contact" data-i18n="nav_contact" onclick="toggleMenu()"></a>
+      <a href="tel:8480722669" class="btn-gold" data-i18n="nav_call" onclick="toggleMenu()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      </a>
+    </div>
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="setLang('en', event)">EN</button>
+      <button class="lang-btn" onclick="setLang('hi', event)">HI</button>
+      <button class="lang-btn" onclick="setLang('bn', event)">BN</button>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg"><img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3f2b1c81b871.jpg" alt="Puri beach Odisha"></div>
+  <div class="hero-content">
+    <div class="badge" data-i18n="hero_badge"></div>
+    <h1 data-i18n="hero_title"></h1>
+    <p data-i18n="hero_sub"></p>
+    <div class="hero-btns">
+      <a href="#packages" class="btn-gold" data-i18n="hero_btn1"></a>
+      <a href="#custom-builder" class="btn-teal" data-i18n="hero_btn2"></a>
+    </div>
+    <div class="hero-stats">
+            <div class="hero-stat reveal"><div class="hs-num" data-i18n="hero_stat1"></div><div class="hs-lbl" data-i18n="hero_stat1_l"></div></div>
+            <div class="hero-stat reveal"><div class="hs-num" data-i18n="hero_stat2"></div><div class="hs-lbl" data-i18n="hero_stat2_l"></div></div>
+            <div class="hero-stat reveal"><div class="hs-num" data-i18n="hero_stat3"></div><div class="hs-lbl" data-i18n="hero_stat3_l"></div></div>
+            <div class="hero-stat reveal"><div class="hs-num" data-i18n="hero_stat4"></div><div class="hs-lbl" data-i18n="hero_stat4_l"></div></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-section">
+  <div class="section-header reveal">
+    <div class="eyebrow" data-i18n="why_head"></div>
+    <h2 data-i18n="why_title"></h2>
+    <p class="sub" data-i18n="why_sub"></p>
+  </div>
+  <div class="why-grid">
+            <div class="why-card reveal">
+                <div class="why-icon">🏛️</div>
+                <h3 data-i18n="why1_t"></h3>
+                <p data-i18n="why1_d"></p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon">🧑‍✈️</div>
+                <h3 data-i18n="why2_t"></h3>
+                <p data-i18n="why2_d"></p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon">💰</div>
+                <h3 data-i18n="why3_t"></h3>
+                <p data-i18n="why3_d"></p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon">🚘</div>
+                <h3 data-i18n="why4_t"></h3>
+                <p data-i18n="why4_d"></p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon">📞</div>
+                <h3 data-i18n="why5_t"></h3>
+                <p data-i18n="why5_d"></p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon">✨</div>
+                <h3 data-i18n="why6_t"></h3>
+                <p data-i18n="why6_d"></p>
+            </div>
+
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="section-header reveal">
+    <div class="eyebrow" data-i18n="pkg_head"></div>
+    <h2 data-i18n="pkg_title"></h2>
+    <p class="sub" data-i18n="pkg_sub"></p>
+  </div>
+  <div class="package-grid">
+            <div class="package-card reveal" onmousemove="tilt(event, this)" onmouseleave="resetTilt(this)">
+                <div class="pkg-img-wrap">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3d75b1415697.jpg" class="pkg-img" alt="" loading="lazy">
+                    <div class="pkg-duration" data-i18n="pkg1_dur"></div>
+                </div>
+                <div class="pkg-content">
+                    <h3 data-i18n="pkg1_title"></h3>
+                    <div class="subtitle" data-i18n="pkg1_sub"></div>
+                    <ul class="features-list">
+                        <li data-i18n="pkg1_l1"></li>
+                        <li data-i18n="pkg1_l2"></li>
+                        <li data-i18n="pkg1_l3"></li>
+                        <li data-i18n="pkg1_l4"></li>
+                        <li data-i18n="pkg1_l5"></li>
+                        <li data-i18n="pkg1_l6"></li>
+                    </ul>
+                    <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20want%20to%20book%20the%20Puri %26 Konark Express%20tour." target="_blank" class="btn-book" data-i18n="btn_book"></a>
+                </div>
+            </div>
+            <div class="package-card reveal" onmousemove="tilt(event, this)" onmouseleave="resetTilt(this)">
+                <div class="pkg-img-wrap">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e14bee74efa6.jpg" class="pkg-img" alt="" loading="lazy">
+                    <div class="pkg-duration" data-i18n="pkg2_dur"></div>
+                </div>
+                <div class="pkg-content">
+                    <h3 data-i18n="pkg2_title"></h3>
+                    <div class="subtitle" data-i18n="pkg2_sub"></div>
+                    <ul class="features-list">
+                        <li data-i18n="pkg2_l1"></li>
+                        <li data-i18n="pkg2_l2"></li>
+                        <li data-i18n="pkg2_l3"></li>
+                        <li data-i18n="pkg2_l4"></li>
+                        <li data-i18n="pkg2_l5"></li>
+                        <li data-i18n="pkg2_l6"></li>
+                    </ul>
+                    <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20want%20to%20book%20the%20Chilika Dolphin Special%20tour." target="_blank" class="btn-book" data-i18n="btn_book"></a>
+                </div>
+            </div>
+            <div class="package-card reveal" onmousemove="tilt(event, this)" onmouseleave="resetTilt(this)">
+                <div class="pkg-img-wrap">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/aee33ecb3b1c.jpg" class="pkg-img" alt="" loading="lazy">
+                    <div class="pkg-duration" data-i18n="pkg3_dur"></div>
+                </div>
+                <div class="pkg-content">
+                    <h3 data-i18n="pkg3_title"></h3>
+                    <div class="subtitle" data-i18n="pkg3_sub"></div>
+                    <ul class="features-list">
+                        <li data-i18n="pkg3_l1"></li>
+                        <li data-i18n="pkg3_l2"></li>
+                        <li data-i18n="pkg3_l3"></li>
+                        <li data-i18n="pkg3_l4"></li>
+                        <li data-i18n="pkg3_l5"></li>
+                        <li data-i18n="pkg3_l6"></li>
+                    </ul>
+                    <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20want%20to%20book%20the%20Golden Triangle Tour%20tour." target="_blank" class="btn-book" data-i18n="btn_book"></a>
+                </div>
+            </div>
+            <div class="package-card reveal" onmousemove="tilt(event, this)" onmouseleave="resetTilt(this)">
+                <div class="pkg-img-wrap">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/38e67735212c.jpg" class="pkg-img" alt="" loading="lazy">
+                    <div class="pkg-duration" data-i18n="pkg4_dur"></div>
+                </div>
+                <div class="pkg-content">
+                    <h3 data-i18n="pkg4_title"></h3>
+                    <div class="subtitle" data-i18n="pkg4_sub"></div>
+                    <ul class="features-list">
+                        <li data-i18n="pkg4_l1"></li>
+                        <li data-i18n="pkg4_l2"></li>
+                        <li data-i18n="pkg4_l3"></li>
+                        <li data-i18n="pkg4_l4"></li>
+                        <li data-i18n="pkg4_l5"></li>
+                        <li data-i18n="pkg4_l6"></li>
+                    </ul>
+                    <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20want%20to%20book%20the%20Tribal Odisha Expedition%20tour." target="_blank" class="btn-book" data-i18n="btn_book"></a>
+                </div>
+            </div>
+            <div class="package-card reveal" onmousemove="tilt(event, this)" onmouseleave="resetTilt(this)">
+                <div class="pkg-img-wrap">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/afbe766fbbd8.jpg" class="pkg-img" alt="" loading="lazy">
+                    <div class="pkg-duration" data-i18n="pkg5_dur"></div>
+                </div>
+                <div class="pkg-content">
+                    <h3 data-i18n="pkg5_title"></h3>
+                    <div class="subtitle" data-i18n="pkg5_sub"></div>
+                    <ul class="features-list">
+                        <li data-i18n="pkg5_l1"></li>
+                        <li data-i18n="pkg5_l2"></li>
+                        <li data-i18n="pkg5_l3"></li>
+                        <li data-i18n="pkg5_l4"></li>
+                        <li data-i18n="pkg5_l5"></li>
+                        <li data-i18n="pkg5_l6"></li>
+                    </ul>
+                    <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20want%20to%20book%20the%20Buddhist Circuit Tour%20tour." target="_blank" class="btn-book" data-i18n="btn_book"></a>
+                </div>
+            </div>
+            <div class="package-card reveal" onmousemove="tilt(event, this)" onmouseleave="resetTilt(this)">
+                <div class="pkg-img-wrap">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3a4715d32b75.jpg" class="pkg-img" alt="" loading="lazy">
+                    <div class="pkg-duration" data-i18n="pkg6_dur"></div>
+                </div>
+                <div class="pkg-content">
+                    <h3 data-i18n="pkg6_title"></h3>
+                    <div class="subtitle" data-i18n="pkg6_sub"></div>
+                    <ul class="features-list">
+                        <li data-i18n="pkg6_l1"></li>
+                        <li data-i18n="pkg6_l2"></li>
+                        <li data-i18n="pkg6_l3"></li>
+                        <li data-i18n="pkg6_l4"></li>
+                        <li data-i18n="pkg6_l5"></li>
+                        <li data-i18n="pkg6_l6"></li>
+                    </ul>
+                    <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20want%20to%20book%20the%20Bhitarkanika Wildlife%20tour." target="_blank" class="btn-book" data-i18n="btn_book"></a>
+                </div>
+            </div>
+
+  </div>
+</section>
+
+<!-- FLEET -->
+<section id="fleet" class="fleet-section">
+  <div class="section-header reveal">
+    <div class="eyebrow" data-i18n="fleet_head"></div>
+    <h2 data-i18n="fleet_title"></h2>
+    <p class="sub" data-i18n="fleet_sub"></p>
+  </div>
+  <div class="fleet-grid">
+            <div class="fleet-card reveal">
+                <div class="fleet-img-wrap">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/51ab88d2921a.jpg" alt="" loading="lazy">
+                    <div class="fleet-icon">🚗</div>
+                </div>
+                <div class="fleet-content">
+                    <h3 data-i18n="fleet1_t"></h3>
+                    <div class="fleet-specs">
+                        <div class="spec"><span class="spec-ico">💺</span><span data-i18n="fleet1_seats"></span></div>
+                        <div class="spec"><span class="spec-ico">🎒</span><span data-i18n="fleet1_bags"></span></div>
+                        <div class="spec"><span class="spec-ico">❄️</span><span data-i18n="fleet1_ac"></span></div>
+                    </div>
+                    <div class="fleet-best" data-i18n="fleet1_best"></div>
+                    <div class="fleet-price" data-i18n="fleet1_price"></div>
+                    <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20want%20to%20book%20a%20cab." target="_blank" class="btn-book" data-i18n="fleet_btn"></a>
+                </div>
+            </div>
+            <div class="fleet-card reveal">
+                <div class="fleet-img-wrap">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/1264b74b6e27.jpg" alt="" loading="lazy">
+                    <div class="fleet-icon">🚙</div>
+                </div>
+                <div class="fleet-content">
+                    <h3 data-i18n="fleet2_t"></h3>
+                    <div class="fleet-specs">
+                        <div class="spec"><span class="spec-ico">💺</span><span data-i18n="fleet2_seats"></span></div>
+                        <div class="spec"><span class="spec-ico">🎒</span><span data-i18n="fleet2_bags"></span></div>
+                        <div class="spec"><span class="spec-ico">❄️</span><span data-i18n="fleet2_ac"></span></div>
+                    </div>
+                    <div class="fleet-best" data-i18n="fleet2_best"></div>
+                    <div class="fleet-price" data-i18n="fleet2_price"></div>
+                    <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20want%20to%20book%20a%20cab." target="_blank" class="btn-book" data-i18n="fleet_btn"></a>
+                </div>
+            </div>
+            <div class="fleet-card reveal">
+                <div class="fleet-img-wrap">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/bb87997d0462.jpg" alt="" loading="lazy">
+                    <div class="fleet-icon">🚐</div>
+                </div>
+                <div class="fleet-content">
+                    <h3 data-i18n="fleet3_t"></h3>
+                    <div class="fleet-specs">
+                        <div class="spec"><span class="spec-ico">💺</span><span data-i18n="fleet3_seats"></span></div>
+                        <div class="spec"><span class="spec-ico">🎒</span><span data-i18n="fleet3_bags"></span></div>
+                        <div class="spec"><span class="spec-ico">❄️</span><span data-i18n="fleet3_ac"></span></div>
+                    </div>
+                    <div class="fleet-best" data-i18n="fleet3_best"></div>
+                    <div class="fleet-price" data-i18n="fleet3_price"></div>
+                    <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20want%20to%20book%20a%20cab." target="_blank" class="btn-book" data-i18n="fleet_btn"></a>
+                </div>
+            </div>
+            <div class="fleet-card reveal">
+                <div class="fleet-img-wrap">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e9866843486b.png" alt="" loading="lazy">
+                    <div class="fleet-icon">🚌</div>
+                </div>
+                <div class="fleet-content">
+                    <h3 data-i18n="fleet4_t"></h3>
+                    <div class="fleet-specs">
+                        <div class="spec"><span class="spec-ico">💺</span><span data-i18n="fleet4_seats"></span></div>
+                        <div class="spec"><span class="spec-ico">🎒</span><span data-i18n="fleet4_bags"></span></div>
+                        <div class="spec"><span class="spec-ico">❄️</span><span data-i18n="fleet4_ac"></span></div>
+                    </div>
+                    <div class="fleet-best" data-i18n="fleet4_best"></div>
+                    <div class="fleet-price" data-i18n="fleet4_price"></div>
+                    <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20want%20to%20book%20a%20cab." target="_blank" class="btn-book" data-i18n="fleet_btn"></a>
+                </div>
+            </div>
+
+  </div>
+</section>
+
+<!-- CUSTOM TOUR BUILDER -->
+<section id="custom-builder" class="custom-builder">
+  <div class="section-header reveal">
+    <div class="eyebrow" data-i18n="cust_head"></div>
+    <h2 data-i18n="cust_title"></h2>
+    <p class="sub" data-i18n="cust_sub"></p>
+  </div>
+  <div class="builder-container">
+    <div class="destinations-grid reveal">
+                <div class="dest-select-card" data-id="d_jagannath" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/aee33ecb3b1c.jpg');">
+                    <div class="icon">🛕</div>
+                    <div class="name" data-i18n="d_jagannath"></div>
+                    <div class="zone" data-i18n="z_puri"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_konark" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3d75b1415697.jpg');">
+                    <div class="icon">☀️</div>
+                    <div class="name" data-i18n="d_konark"></div>
+                    <div class="zone" data-i18n="z_konark"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_lingaraj" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5eaea957ca85.jpg');">
+                    <div class="icon">🕉️</div>
+                    <div class="name" data-i18n="d_lingaraj"></div>
+                    <div class="zone" data-i18n="z_bbsr"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_mukteswar" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c3b9ddcf286f.jpg');">
+                    <div class="icon">🛕</div>
+                    <div class="name" data-i18n="d_mukteswar"></div>
+                    <div class="zone" data-i18n="z_bbsr"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_sidheswar" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b57ebcc7c272.jpg');">
+                    <div class="icon">🛕</div>
+                    <div class="name" data-i18n="d_sidheswar"></div>
+                    <div class="zone" data-i18n="z_bbsr"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_alarnath" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c19cb0ac26ef.jpg');">
+                    <div class="icon">🛕</div>
+                    <div class="name" data-i18n="d_alarnath"></div>
+                    <div class="zone" data-i18n="z_puri"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_chilika" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e14bee74efa6.jpg');">
+                    <div class="icon">🐬</div>
+                    <div class="name" data-i18n="d_chilika"></div>
+                    <div class="zone" data-i18n="z_satapada"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_nandankanan" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ccc561e9d798.jpg');">
+                    <div class="icon">🦁</div>
+                    <div class="name" data-i18n="d_nandankanan"></div>
+                    <div class="zone" data-i18n="z_bbsr"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_khandagiri" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/50f804c4488e.jpg');">
+                    <div class="icon">🏞️</div>
+                    <div class="name" data-i18n="d_khandagiri"></div>
+                    <div class="zone" data-i18n="z_bbsr"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_dhauli" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e2ac7063a6ce.jpg');">
+                    <div class="icon">☸️</div>
+                    <div class="name" data-i18n="d_dhauli"></div>
+                    <div class="zone" data-i18n="z_bbsr"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_puri_beach" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c561cc6bd167.jpg');">
+                    <div class="icon">🏖️</div>
+                    <div class="name" data-i18n="d_puri_beach"></div>
+                    <div class="zone" data-i18n="z_puri"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_chandrabhaga" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3524b0f7c598.jpg');">
+                    <div class="icon">🌊</div>
+                    <div class="name" data-i18n="d_chandrabhaga"></div>
+                    <div class="zone" data-i18n="z_konark"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_sea_mouth" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e055aa109649.jpg');">
+                    <div class="icon">🌅</div>
+                    <div class="name" data-i18n="d_sea_mouth"></div>
+                    <div class="zone" data-i18n="z_chilika"></div>
+                </div>
+                <div class="dest-select-card" data-id="d_red_crab" onclick="toggleDest(this)" style="background-image: url('https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6a9ecde90e29.jpg');">
+                    <div class="icon">🦀</div>
+                    <div class="name" data-i18n="d_red_crab"></div>
+                    <div class="zone" data-i18n="z_chilika"></div>
+                </div>
+
+    </div>
+    <div class="summary-sidebar reveal">
+      <h3 data-i18n="sum_title"></h3>
+      <ul class="selected-list" id="selectedList"></ul>
+      <div class="empty-msg" id="emptyMsg" data-i18n="sum_empty"></div>
+      <button class="btn-whatsapp-action" id="waBtn" onclick="sendWhatsApp()" disabled>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span data-i18n="sum_btn"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery-section">
+  <div class="section-header reveal">
+    <div class="eyebrow" data-i18n="gallery_head"></div>
+    <h2 data-i18n="gallery_title"></h2>
+    <p class="sub" data-i18n="gallery_sub"></p>
+  </div>
+  <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3d75b1415697.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3f2b1c81b871.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e14bee74efa6.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/aee33ecb3b1c.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5eaea957ca85.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e2ac7063a6ce.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(6)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/50f804c4488e.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(7)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3524b0f7c598.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(8)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3a4715d32b75.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(9)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/38e67735212c.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(10)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ccc561e9d798.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(11)">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6a9ecde90e29.jpg" alt="" loading="lazy">
+                    <div class="gallery-zoom">🔍</div>
+                </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightboxBg(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)">›</button>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testi-section">
+  <div class="section-header reveal">
+    <div class="eyebrow" data-i18n="testi_head"></div>
+    <h2 data-i18n="testi_title"></h2>
+    <p class="sub" data-i18n="testi_sub"></p>
+  </div>
+  <div class="testi-grid">
+            <div class="testi-card reveal">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text" data-i18n="testi1"></p>
+                <div class="testi-author">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3139bc6aa4e1.jpg" alt="" loading="lazy">
+                    <div>
+                        <div class="testi-name">Rajesh Kumar</div>
+                        <div class="testi-city">Delhi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card reveal">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text" data-i18n="testi2"></p>
+                <div class="testi-author">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7ddf990d5cf1.jpg" alt="" loading="lazy">
+                    <div>
+                        <div class="testi-name">Priya Sharma</div>
+                        <div class="testi-city">Mumbai</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card reveal">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text" data-i18n="testi3"></p>
+                <div class="testi-author">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3139bc6aa4e1.jpg" alt="" loading="lazy">
+                    <div>
+                        <div class="testi-name">Anil Mehta</div>
+                        <div class="testi-city">Ahmedabad</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card reveal">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text" data-i18n="testi4"></p>
+                <div class="testi-author">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7ddf990d5cf1.jpg" alt="" loading="lazy">
+                    <div>
+                        <div class="testi-name">Sneha Patel</div>
+                        <div class="testi-city">Bengaluru</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card reveal">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text" data-i18n="testi5"></p>
+                <div class="testi-author">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/916b47e2cb73.jpg" alt="" loading="lazy">
+                    <div>
+                        <div class="testi-name">Vikram Reddy</div>
+                        <div class="testi-city">Hyderabad</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card reveal">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text" data-i18n="testi6"></p>
+                <div class="testi-author">
+                    <img src="https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/0f6d7a596101.jpg" alt="" loading="lazy">
+                    <div>
+                        <div class="testi-name">Meera Iyer</div>
+                        <div class="testi-city">Pune</div>
+                    </div>
+                </div>
+            </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq-section">
+  <div class="section-header reveal">
+    <div class="eyebrow" data-i18n="faq_head"></div>
+    <h2 data-i18n="faq_title"></h2>
+    <p class="sub" data-i18n="faq_sub"></p>
+  </div>
+  <div class="faq-container">
+            <div class="faq-item open">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span data-i18n="faq1_q"></span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-a"><p data-i18n="faq1_a"></p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span data-i18n="faq2_q"></span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-a"><p data-i18n="faq2_a"></p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span data-i18n="faq3_q"></span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-a"><p data-i18n="faq3_a"></p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span data-i18n="faq4_q"></span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-a"><p data-i18n="faq4_a"></p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span data-i18n="faq5_q"></span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-a"><p data-i18n="faq5_a"></p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span data-i18n="faq6_q"></span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-a"><p data-i18n="faq6_a"></p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span data-i18n="faq7_q"></span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-a"><p data-i18n="faq7_a"></p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    <span data-i18n="faq8_q"></span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-a"><p data-i18n="faq8_a"></p></div>
+            </div>
+
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="location-section" id="location">
+  <div class="section-header reveal" style="margin-bottom:40px;">
+    <div class="eyebrow" data-i18n="map_head"></div>
+    <h2 data-i18n="map_title"></h2>
+  </div>
+  <div class="map-container reveal">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.865229688478!2d85.8319783!3d19.8132314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19c4203c1b3e77%3A0x9e44b7f35e6c5a2!2sYouth%20Hostel%20Bus%20Parking!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map-overlay">
+      <div class="mo-icon">📍</div>
+      <div class="mo-text">
+        <strong>Shree Ganesh Tour &amp; Travels</strong>
+        <span data-i18n="footer_address"></span>
+      </div>
+      <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20need%20directions%20to%20your%20office." target="_blank" class="btn-teal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-content">
+    <div class="footer-col footer-about reveal">
+      <a href="#home" class="logo"><span class="logo-main">Shree Ganesh</span><span>Tour &amp; Travels</span></a>
+      <p data-i18n="footer_about" style="margin-top:14px;"></p>
+      <div class="footer-social">
+        <a href="https://wa.me/918480722669" target="_blank" title="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg></a>
+        <a href="tel:8480722669" title="Call"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+        <a href="#location" title="Location"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col reveal">
+      <h4 data-i18n="footer_contact"></h4>
+      <a href="tel:8480722669">📞 +91 84807 22669</a>
+      <a href="tel:7978639507">📞 +91 79786 39507</a>
+      <a href="tel:9861192433">📞 +91 98611 92433</a>
+      <p data-i18n="footer_address"></p>
+      <p data-i18n="footer_hours" style="margin-top:8px;"></p>
+    </div>
+    <div class="footer-col reveal">
+      <h4 data-i18n="footer_info"></h4>
+      <p data-i18n="footer_reg"></p>
+      <div class="footer-info-val">26201700144/2017</div>
+      <p data-i18n="footer_owner"></p>
+      <div class="footer-info-val">Pradeep Pradhan</div>
+    </div>
+    <div class="footer-col reveal">
+      <h4 data-i18n="footer_quick"></h4>
+      <a href="#packages" data-i18n="nav_packages"></a>
+      <a href="#fleet" data-i18n="nav_fleet"></a>
+      <a href="#custom-builder" data-i18n="nav_custom"></a>
+      <a href="#gallery" data-i18n="nav_gallery"></a>
+      <a href="#faq" data-i18n="nav_faq"></a>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 Shree Ganesh Tour &amp; Travels. All rights reserved.<br>
+    <span style="font-size:11px; opacity:.5; margin-top:5px; display:inline-block;">Designed with ❤️ for Odisha travellers</span>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-group">
+  <a href="tel:8480722669" class="float-btn float-call" title="Direct Call">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    <span class="float-label">Call</span>
+    <span class="tooltip">Direct Call</span>
+  </a>
+  <a href="https://wa.me/918480722669?text=Hi%20Pradeep%20Pradhan,%20I%20have%20a%20general%20enquiry." class="float-btn float-wa" target="_blank" title="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+    <span class="float-label">WhatsApp</span>
+    <span class="tooltip">WhatsApp Us</span>
+  </a>
+</div>
+
+<script>
+// TESTIMONIAL TEXTS (per-language via i18n keys testi1..testi6)
+const TESTI_TEXTS = {
+  "en": {
+    "testi1": "Outstanding service! Pradeep ji arranged our 4-day Puri-Konark-Chilika tour flawlessly. The driver was punctual, the cab was spotless, and the itinerary covered everything we wanted. Highly recommended for family trips.",
+    "testi2": "Booked the Chilika Dolphin tour with Shree Ganesh Travels. Saw dolphins up close, had amazing seafood, and the boat ride was magical. The team understood exactly what we wanted. Will come back for sure!",
+    "testi3": "Used their custom tour builder to plan a 6-day Odisha heritage trip. Excellent response on WhatsApp, fair pricing, and the Innova was very comfortable. The driver knew every temple's history. Five stars!",
+    "testi4": "From Bhubaneswar airport pickup to Puri drop, everything was smooth. Visited Lingaraj, Mukteswar, Dhauli, Khandagiri and Nandankanan in one day. Pradeep ji is honest and reliable. Best taxi service in Puri!",
+    "testi5": "Took my parents for Jagannath darshan and Konark trip. The driver was respectful and patient with elderly passengers. Cab was sanitized and AC worked perfectly. Very reasonable rates compared to others.",
+    "testi6": "The Bhitarkanika wildlife tour was a dream! Saw crocodiles, migratory birds, and the mangrove forest is breathtaking. Shree Ganesh team arranged everything including forest permits. Truly memorable experience."
+  },
+  "hi": {
+    "testi1": "शानदार सेवा! प्रदीप जी ने हमारी 4-दिन की पुरी-कोणार्क-चिल्का यात्रा बेदाग रूप से व्यवस्थित की। ड्राइवर समय पर था, कैब साफ थी, और यात्रा कार्यक्रम में सब कुछ शामिल था। परिवार की यात्रा के लिए बहतीन।",
+    "testi2": "श्री गणेश ट्रैवल्स के साथ चिल्का डॉल्फिन टूर बुक किया। करीब से डॉल्फिन देखे, शानदार समुद्री भोजन किया, और नौका विहार जादुई था। टीम ने हमारी ज़रूरतें बिल्कुल समझीं। फिर से आएंगे!",
+    "testi3": "6-दिन की ओड़िशा हेरिटेज यात्रा के लिए उनके कस्टम टूर बिल्डर का उपयोग किया। WhatsApp पर बढ़िया प्रतिक्रिया, उचित मूल्य, और इनोवा बहुत आरामदायक थी। ड्राइवर हर मंदिर का इतिहास जानता था।",
+    "testi4": "भुवनेश्वर हवाई अड्डे से पिकअप से लेकर पुरी ड्रॉप तक सब कुछ सहज रहा। एक दिन में लिंगराज, मुक्तेश्वर, धौली, खंडगिरी और नंदनकानन देखा। प्रदीप जी ईमानदार और भरोसेमंद हैं।",
+    "testi5": "जगन्नाथ दर्शन और कोणार्क यात्रा के लिए अपने माता-पिता को ले गया। ड्राइवर बुज़ुर्ग यात्रियों के प्रति सम्मानजनक और धैर्यवान था। कैब सैनिटाइज़्ड थी और AC बढ़िया चला।",
+    "testi6": "भीतरकनिका वन्यजीव टूर एक सपना था! मगरमच्छ, प्रवासी पक्षी देखे, और मैंग्रोव जंगल जीवंत है। श्री गणेश टीम ने वन परमिट सहित सब कुछ व्यवस्थित किया।"
+  },
+  "bn": {
+    "testi1": "অসাধারণ পরিষেবা! প্রদীপ জি আমাদের ৫-দিনের পুরী-কোণার্ক-চিলিকা ভ্রমণ নিখুঁতভাবে সাজিয়েছিলেন। ড্রাইভার সময়নিষ্ঠ, ক্যাব পরিষ্কার, এবং ইটিনারারিতে সব ছিল। পরিবারের ভ্রমণের জন্য সেরা।",
+    "testi2": "শ্রী গণেশ ট্রাভেলসের সাথে চিলিকা ডলফিন টুর বুক করেছিলাম। কাছ থেকে ডলফিন দেখলাম, দুর্দান্ত সামুদ্রিক খাবার, এবং নঌকা ভ্রমণ ছিল জাদুকরী। টিম আমাদের চাওয়া বুঝেছিল।",
+    "testi3": "৫ দিনের ওড়িশা হেরিটেজ ভ্রমণের জন্য তাদের কাস্টম টুর বিল্ডার ব্যবহার করেছি। WhatsApp-এ দুর্দান্ত প্রতিক্রিয়া, যুক্তিযুক্ত মূল্য, এবং ইনোভা খুব আরামদায়ক ছিল।",
+    "testi4": "ভুবনেশ্বর বিমানবন্দর পিকআপ থেকে পুরী ড্রপ পর্যন্ত সব মসৃণ ছিল। একদিনে লিঙ্গরাজ, মুক্তেশ্বর, ধৌলি, খণ্ডগিরি এবং নন্দনকানন দেখলাম। প্রদীপ জি সৎ এবং বিশ্বস্ত।",
+    "testi5": "জগন্নাথ দর্শন এবং কোণার্ক ভ্রমণে বাবা-মাকে নিয়ে গেলাম। ড্রাইভার বয়স্ক যাত্রীদের প্রতি শ্রদ্ধাশীল এবং ধৈর্যশীল ছিল। ক্যাব স্যানিটাইজ্ড এবং AC ভালো কাজ করেছে।",
+    "testi6": "ভিতরকনিকা বন্যপ্রাণী টুর ছিল এক স্বপ্ন! কুমীর, অভিবাসী পাখি দেখলাম, এবং ম্যানগ্রোভ বন নিঃশ্বাসরূপ। শ্রী গণেশ টিম বন পারমিট সহ সব ব্যবস্থা করেছিল।"
+  }
+};
+
+const GALLERY_IMAGES = ['https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3d75b1415697.jpg','https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3f2b1c81b871.jpg','https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e14bee74efa6.jpg','https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/aee33ecb3b1c.jpg','https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5eaea957ca85.jpg','https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e2ac7063a6ce.jpg','https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/50f804c4488e.jpg','https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3524b0f7c598.jpg','https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3a4715d32b75.jpg','https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/38e67735212c.jpg','https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ccc561e9d798.jpg','https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6a9ecde90e29.jpg'];
+let currentLightboxIdx = 0;
+
+// TRANSLATIONS
+const translations = {
+  "en": {
+    "nav_home": "Home",
+    "nav_packages": "Tour Packages",
+    "nav_fleet": "Our Fleet",
+    "nav_custom": "Build Your Own",
+    "nav_gallery": "Gallery",
+    "nav_faq": "FAQ",
+    "nav_contact": "Contact",
+    "nav_call": "Call Now",
+    "hero_badge": "GOVT. REGD NO. 26201700144/2017",
+    "hero_title": "Discover the Soul of <span>Odisha</span>",
+    "hero_sub": "From the divine shores of Puri to the architectural marvel of Konark. Premium taxi service and curated journeys with Shree Ganesh Tour & Travels — your trusted local partner since 2017.",
+    "hero_btn1": "Explore Packages",
+    "hero_btn2": "Build Custom Tour",
+    "hero_stat1": "8+ Years",
+    "hero_stat1_l": "Experience",
+    "hero_stat2": "5000+",
+    "hero_stat2_l": "Happy Travellers",
+    "hero_stat3": "4.9★",
+    "hero_stat3_l": "Customer Rating",
+    "hero_stat4": "24×7",
+    "hero_stat4_l": "On-Road Support",
+    "why_head": "Why Travellers Trust Us",
+    "why_title": "The Shree Ganesh Advantage",
+    "why_sub": "Six reasons why families across India choose us for their Odisha journeys.",
+    "why1_t": "Govt. Registered",
+    "why1_d": "Licensed tour operator (Regd. No. 26201700144/2017) with all mandatory permits and insurance.",
+    "why2_t": "Verified Local Drivers",
+    "why2_d": "Experienced, courteous drivers who know every temple, beach and shortcut in Odisha.",
+    "why3_t": "Transparent Pricing",
+    "why3_d": "No hidden charges. Fixed rates shared upfront on WhatsApp before booking confirmation.",
+    "why4_t": "Well-Maintained Fleet",
+    "why4_d": "Sanitized AC cabs — Sedan, SUV, Innova and Tempo Traveller for every group size.",
+    "why5_t": "24×7 On-Road Support",
+    "why5_d": "Stuck somewhere? Call us anytime. We are reachable round the clock, every day of the week.",
+    "why6_t": "Custom Itineraries",
+    "why6_d": "Mix and match 14+ destinations and we craft a personalised tour just for you — within your budget.",
+    "pkg_head": "Handcrafted Itineraries",
+    "pkg_title": "Our Best-Selling Tours",
+    "pkg_sub": "Curated by Pradeep Pradhan after 8+ years of guiding travellers across Odisha.",
+    "pkg1_title": "Puri & Konark Express",
+    "pkg1_sub": "Full Day Heritage Tour",
+    "pkg1_dur": "1 Day · 8 hrs",
+    "pkg1_l1": "Chandrabhaga Sea Beach",
+    "pkg1_l2": "Konark Sun Temple",
+    "pkg1_l3": "Dhauli Giri (Shanti Stupa)",
+    "pkg1_l4": "Lingaraj & Mukteswar Temple",
+    "pkg1_l5": "Khandagiri & Udayagiri Caves",
+    "pkg1_l6": "Nandankanan Zoo & Bhubaneswar City",
+    "pkg2_title": "Chilika Dolphin Special",
+    "pkg2_sub": "Nature & Wildlife Trip",
+    "pkg2_dur": "1 Day · 9 hrs",
+    "pkg2_l1": "Chilika Lake Boat Ride",
+    "pkg2_l2": "Dolphin Point (Satapada)",
+    "pkg2_l3": "Sea Mouth Viewpoint",
+    "pkg2_l4": "Red Crab Beach Point",
+    "pkg2_l5": "Alarnath Temple Darshan",
+    "pkg2_l6": "Fresh Seafood Lunch Included",
+    "pkg3_title": "Golden Triangle Tour",
+    "pkg3_sub": "Bhubaneswar · Puri · Konark",
+    "pkg3_dur": "2 Days · 1 Night",
+    "pkg3_l1": "Day 1: Bhubaneswar temples — Lingaraj, Mukteswar, Rajarani",
+    "pkg3_l2": "Day 1: Khandagiri & Udayagiri Caves + Dhauli Stupa",
+    "pkg3_l3": "Day 2: Konark Sun Temple & Chandrabhaga Beach",
+    "pkg3_l4": "Day 2: Jagannath Temple Darshan + Puri Beach",
+    "pkg3_l5": "Day 2: Evening at Puri Golden Beach",
+    "pkg3_l6": "Comfortable AC stay + all transfers included",
+    "pkg4_title": "Tribal Odisha Expedition",
+    "pkg4_sub": "Koraput · Jeypore · Rayagada",
+    "pkg4_dur": "4 Days · 3 Nights",
+    "pkg4_l1": "Visit authentic Dongria Kondh & Bonda tribal weekly markets",
+    "pkg4_l2": "Trek to remote hill villages of Koraput valley",
+    "pkg4_l3": "Sunset at Deomali — Odisha's highest peak",
+    "pkg4_l4": "Coffee plantation tour at Lamtaput",
+    "pkg4_l5": "Stay at eco-resort with traditional Odiya meals",
+    "pkg4_l6": "Photographer-friendly itinerary with local interpreter",
+    "pkg5_title": "Buddhist Circuit Tour",
+    "pkg5_sub": "Diamond Triangle of Odisha",
+    "pkg5_dur": "1 Day · 7 hrs",
+    "pkg5_l1": "Lalitgiri — ancient Buddhist university ruins",
+    "pkg5_l2": "Ratnagiri — magnificent monasteries & stupas",
+    "pkg5_l3": "Udayagiri — rock-cut Buddhist caves",
+    "pkg5_l4": "Langudi Hill — ancient relics & inscriptions",
+    "pkg5_l5": "Pushpagiri monastery visit",
+    "pkg5_l6": "Guided tour with historical context included",
+    "pkg6_title": "Bhitarkanika Wildlife",
+    "pkg6_sub": "Mangrove & Crocodile Safari",
+    "pkg6_dur": "2 Days · 1 Night",
+    "pkg6_l1": "Boat safari through Asia's 2nd largest mangrove forest",
+    "pkg6_l2": "Saltwater crocodile spotting at Bhitarkanika creek",
+    "pkg6_l3": "Bird watching — migratory species in winter",
+    "pkg6_l4": "Trek to ancient Garhmata (turtle nesting) beach",
+    "pkg6_l5": "Visit 9th-century Lotus Temple",
+    "pkg6_l6": "Forest permit, guide & eco-resort stay included",
+    "btn_book": "Book This Tour",
+    "btn_enquire": "Enquire on WhatsApp",
+    "fleet_head": "Travel in Comfort",
+    "fleet_title": "Our Fleet",
+    "fleet_sub": "Choose the perfect vehicle for your group size and budget. All cabs are AC, sanitized and driven by verified chauffeurs.",
+    "fleet1_t": "Swift Dzire / Sedan",
+    "fleet1_seats": "4 + 1 Seater",
+    "fleet1_bags": "2 Bags",
+    "fleet1_ac": "AC Included",
+    "fleet1_best": "City tours & small family",
+    "fleet1_price": "₹12/km",
+    "fleet2_t": "Maruti Ertiga / SUV",
+    "fleet2_seats": "6 + 1 Seater",
+    "fleet2_bags": "3 Bags",
+    "fleet2_ac": "AC Included",
+    "fleet2_best": "Small group & airport",
+    "fleet2_price": "₹15/km",
+    "fleet3_t": "Toyota Innova Crysta",
+    "fleet3_seats": "6 + 1 Seater",
+    "fleet3_bags": "4 Bags",
+    "fleet3_ac": "AC Included",
+    "fleet3_best": "Premium comfort & long trips",
+    "fleet3_price": "₹18/km",
+    "fleet4_t": "Force Tempo Traveller",
+    "fleet4_seats": "12 + 1 Seater",
+    "fleet4_bags": "6 Bags",
+    "fleet4_ac": "AC Included",
+    "fleet4_best": "Large group & family tours",
+    "fleet4_price": "₹22/km",
+    "fleet_btn": "Book This Cab",
+    "cust_head": "Tailor-Made For You",
+    "cust_title": "Build Your Own Tour",
+    "cust_sub": "Select the destinations you want to visit, and we will craft the perfect itinerary with a transparent quote.",
+    "sum_title": "Your Custom Itinerary",
+    "sum_empty": "No destinations selected yet. Click the cards on the left to add places to your tour.",
+    "sum_btn": "Send Inquiry on WhatsApp",
+    "gallery_head": "Moments From Odisha",
+    "gallery_title": "Photo Gallery",
+    "gallery_sub": "A glimpse of what awaits you — temples, beaches, wildlife and culture.",
+    "testi_head": "Real Travellers, Real Stories",
+    "testi_title": "What Our Guests Say",
+    "testi_sub": "Over 5000 happy travellers have explored Odisha with us.",
+    "faq_head": "Quick Answers",
+    "faq_title": "Frequently Asked Questions",
+    "faq_sub": "Everything you need to know before booking your Odisha tour.",
+    "faq1_q": "How do I book a cab or tour package?",
+    "faq1_a": "Simply call us at +91 84807 22669 or send a WhatsApp message. Share your travel dates, pickup location and preferred destinations. We will share a transparent quote within minutes. Once you confirm, your booking is locked in.",
+    "faq2_q": "What is the per-kilometre rate for cabs?",
+    "faq2_a": "Sedan starts at ₹12/km, SUV at ₹15/km, Innova at ₹18/km, and Tempo Traveller at ₹22/km. For full-day tours (8 hr / 80 km), we offer fixed package rates that work out cheaper than per-km. Minimum daily billing applies. Outstation trips include driver allowance and toll.",
+    "faq3_q": "Are the rates negotiable for long trips?",
+    "faq3_a": "Yes. For trips of 3 days or more, we offer customised packages with bundled discounts. Mention your duration and destinations on WhatsApp and we will share the best price possible — no hidden charges ever.",
+    "faq4_q": "Can I customise the fixed tour packages?",
+    "faq4_a": "Absolutely. Use our \"Build Your Own Tour\" section above to pick destinations from across Puri, Konark, Bhubaneswar and Chilika. We will create a personalised itinerary and share a quote on WhatsApp.",
+    "faq5_q": "Is airport pickup available from Bhubaneswar?",
+    "faq5_a": "Yes, we provide airport pickup and drop at Biju Patnaik International Airport (Bhubaneswar) and railway station transfers at Puri, Bhubaneswar and Khurda. Mention your flight/train timing while booking.",
+    "faq6_q": "What is the cancellation policy?",
+    "faq6_a": "Free cancellation up to 12 hours before pickup. Within 12 hours, a nominal charge of ₹500 applies. In case of train/flight cancellation by the operator, full refund is processed.",
+    "faq7_q": "Are the drivers familiar with temple darshan timings?",
+    "faq7_a": "Yes, all our drivers are locals who know darshan timings, special aarti slots and crowd-avoidance windows at Jagannath Temple, Lingaraj and Konark. They will plan your route so you avoid peak rush.",
+    "faq8_q": "Do you arrange accommodations and meals too?",
+    "faq8_a": "Yes, for multi-day packages we partner with verified hotels and homestays across Puri, Bhubaneswar, Konark and Chilika. Vegetarian Odiya thali and seafood options can be pre-arranged. Just ask while booking.",
+    "map_head": "Visit Our Office",
+    "map_title": "Find Us in Puri",
+    "footer_about": "Your trusted local partner in Puri for exploring the divine and natural beauty of Odisha. We create memories that last a lifetime.",
+    "footer_contact": "Contact Us",
+    "footer_address": "C.T Road, Puri (Near Youth Hostel Bus Parking)",
+    "footer_info": "Business Info",
+    "footer_reg": "Govt. Regd No:",
+    "footer_owner": "Owner",
+    "footer_hours": "Office Hours: 6 AM – 10 PM Daily",
+    "footer_quick": "Quick Links",
+    "footer_connect": "Connect With Us",
+    "d_jagannath": "Jagannath Temple",
+    "d_konark": "Konark Sun Temple",
+    "d_lingaraj": "Lingaraj Temple",
+    "d_mukteswar": "Mukteswar Temple",
+    "d_sidheswar": "Sidheswar Temple",
+    "d_alarnath": "Alarnath Temple",
+    "d_chilika": "Chilika Dolphin Point",
+    "d_nandankanan": "Nandankanan Zoo",
+    "d_khandagiri": "Khandagiri & Udayagiri",
+    "d_dhauli": "Dhauli Giri Stupa",
+    "d_puri_beach": "Puri Golden Beach",
+    "d_chandrabhaga": "Chandrabhaga Beach",
+    "d_sea_mouth": "Sea Mouth",
+    "d_red_crab": "Red Crab Point",
+    "z_puri": "Puri",
+    "z_konark": "Konark",
+    "z_bbsr": "Bhubaneswar",
+    "z_satapada": "Satapada",
+    "z_chilika": "Chilika",
+    "wa_msg": "Hello Pradeep Pradhan,\n\nI want to build a *Custom Tour Package*.\n\nPlease include these destinations in my itinerary:\n",
+    "wa_end": "\nPlease share a quote and time estimate. Thank you!"
+  },
+  "hi": {
+    "nav_home": "होम",
+    "nav_packages": "टूर पैकेज",
+    "nav_fleet": "हमारी गाड़ियाँ",
+    "nav_custom": "कस्टम टूर",
+    "nav_gallery": "गैलरी",
+    "nav_faq": "सवाल-जवाब",
+    "nav_contact": "संपर्क",
+    "nav_call": "अभी कॉल करें",
+    "hero_badge": "सरकारी पंजीकृत संख्या: 26201700144/2017",
+    "hero_title": "ओडिशा की आत्मा को <span>जानें</span>",
+    "hero_sub": "पुरी के पवित्र तटों से लेकर कोणार्क के स्थापत्य चमत्कार तक। श्री गणेश टूर एंड ट्रैवल्स के साथ प्रीमियम टैक्सी और व्यवस्थित यात्रा — 2017 से आपका भरोसेमंद साथी।",
+    "hero_btn1": "पैकेज देखें",
+    "hero_btn2": "कस्टम टूर बनाएं",
+    "hero_stat1": "8+ वर्ष",
+    "hero_stat1_l": "अनुभव",
+    "hero_stat2": "5000+",
+    "hero_stat2_l": "खुश यात्री",
+    "hero_stat3": "4.9★",
+    "hero_stat3_l": "रेटिंग",
+    "hero_stat4": "24×7",
+    "hero_stat4_l": "सहायता",
+    "why_head": "यात्री हम पर भरोसा क्यों करते हैं",
+    "why_title": "श्री गणेश की खासियत",
+    "why_sub": "छह कारण जिनकी वजह से पूरे भारत के परिवार ओडिशा यात्रा के लिए हमें चुनते हैं।",
+    "why1_t": "सरकारी पंजीकृत",
+    "why1_d": "लाइसेंस प्राप्त टूर ऑपरेटर (Regd. No. 26201700144/2017) सभी ज़रूरी परमिट और बीमा के साथ।",
+    "why2_t": "सत्यापित लोकल ड्राइवर",
+    "why2_d": "अनुभवी, विनम्र ड्राइवर जो ओडिशा के हर मंदिर, समुद्र तट और शॉर्टकट से परिचित हैं।",
+    "why3_t": "पारदर्शी मूल्य निर्धारण",
+    "why3_d": "कोई छिपा हुआ शुल्क नहीं। बुकिंग से पहले WhatsApp पर निर्धारित दरें साझा की जाती हैं।",
+    "why4_t": "अच्छी देखभाल वाला बेड़ा",
+    "why4_d": "सैनिटाइज़्ड AC कैब — हर समूह के आकार के लिए सेडान, SUV, इनोवा और टेम्पो ट्रैवलर।",
+    "why5_t": "24×7 सड़क सहायता",
+    "why5_d": "कहीं फँस गए? कभी भी कॉल करें। हम हर दिन, पूरे दिन उपलब्ध हैं।",
+    "why6_t": "कस्टम इटिनरेरी",
+    "why6_d": "14+ गंतव्यों में से चुनें और हम आपके बजट में एक व्यक्तिगत टूर तैयार करेंगे।",
+    "pkg_head": "हस्तनिर्मित यात्रा कार्यक्रम",
+    "pkg_title": "हमारे सबसे लोकप्रिय टूर",
+    "pkg_sub": "ओडिशा में 8+ वर्षों के मार्गदर्शन के बाद प्रदीप प्रधान द्वारा तैयार।",
+    "pkg1_title": "पुरी और कोणार्क एक्सप्रेस",
+    "pkg1_sub": "पूरे दिन का हेरिटेज टूर",
+    "pkg1_dur": "1 दिन · 8 घंटे",
+    "pkg1_l1": "चंद्रभागा समुद्र तट",
+    "pkg1_l2": "कोणार्क सूर्य मंदिर",
+    "pkg1_l3": "धौली गिरी (शांति स्तूप)",
+    "pkg1_l4": "लिंगराज और मुक्तेश्वर मंदिर",
+    "pkg1_l5": "खंडगिरी और उदयगिरी गुफाएं",
+    "pkg1_l6": "नंदनकानन चिड़ियाघर और भुवनेश्वर शहर",
+    "pkg2_title": "चिल्का डॉल्फिन स्पेशल",
+    "pkg2_sub": "प्रकृति और वन्यजीव यात्रा",
+    "pkg2_dur": "1 दिन · 9 घंटे",
+    "pkg2_l1": "चिल्का झील नौका विहार",
+    "pkg2_l2": "डॉल्फिन पॉइंट (सतपाडा)",
+    "pkg2_l3": "सी माउथ व्यू पॉइंट",
+    "pkg2_l4": "रेड क्रैब बीच पॉइंट",
+    "pkg2_l5": "अलारनाथ मंदिर दर्शन",
+    "pkg2_l6": "ताजा समुद्री भोजन दोपहर के भोजन में",
+    "pkg3_title": "गोल्डन ट्रायंगल टूर",
+    "pkg3_sub": "भुवनेश्वर · पुरी · कोणार्क",
+    "pkg3_dur": "2 दिन · 1 रात",
+    "pkg3_l1": "दिन 1: भुवनेश्वर मंदिर — लिंगराज, मुक्तेश्वर, राजारानी",
+    "pkg3_l2": "दिन 1: खंडगिरी और उदयगिरी गुफाएं + धौली स्तूप",
+    "pkg3_l3": "दिन 2: कोणार्क सूर्य मंदिर और चंद्रभागा बीच",
+    "pkg3_l4": "दिन 2: जगन्नाथ मंदिर दर्शन + पुरी बीच",
+    "pkg3_l5": "दिन 2: शाम पुरी गोल्डन बीच पर",
+    "pkg3_l6": "आरामदायक AC ठहराव + सभी ट्रांसफर शामिल",
+    "pkg4_title": "ट्रिबल ओडिशा अभियान",
+    "pkg4_sub": "कोरापुत · जयपुर · रायगढ़ा",
+    "pkg4_dur": "4 दिन · 3 रात",
+    "pkg4_l1": "प्रामाणिक डोंगरिया कोंध और बोंडा जनजाती बाजार",
+    "pkg4_l2": "कोरापुत घाटी के दूरस्थ गांवों में ट्रेक",
+    "pkg4_l3": "देवोमली — ओडिशा के सबसे ऊंचे शिखर पर � sunset",
+    "pkg4_l4": "लमतापुत में कॉफी बागान टूर",
+    "pkg4_l5": "पारंपरिक ओडिया भोजन के साथ इको-रिसॉर्ट में ठहराव",
+    "pkg4_l6": "स्थानीय दुभाषिये के साथ फोटोग्राफर-फ्रेंडली इटिनरेरी",
+    "pkg5_title": "बौद्ध सर्किट टूर",
+    "pkg5_sub": "ओडिशा का डायमंड ट्रायंगल",
+    "pkg5_dur": "1 दिन · 7 घंटे",
+    "pkg5_l1": "ललितगिरी — प्राचीन बौद्ध विश्वविद्यालय अवशेष",
+    "pkg5_l2": "रत्नगिरी — भव्य मठ और स्तूप",
+    "pkg5_l3": "उदयगिरी — चट्टान से बौद्ध गुफाएं",
+    "pkg5_l4": "लांगुड़ी पहाड़ी — प्राचीन अवशेष और शिलालेख",
+    "pkg5_l5": "पुष्पगिरी मठ यात्रा",
+    "pkg5_l6": "ऐतिहासिक संदर्भ के साथ निर्देशित टूर शामिल",
+    "pkg6_title": "भीतरकनिका वन्यजीव",
+    "pkg6_sub": "मैंग्रोव और मगरमच्छ सफारी",
+    "pkg6_dur": "2 दिन · 1 रात",
+    "pkg6_l1": "एशिया के दूसरे सबसे बड़े मैंग्रोव जंगल में नाव सफारी",
+    "pkg6_l2": "भीतरकनिका खाड़ी में खारे पानी के मगरमच्छ देखें",
+    "pkg6_l3": "पक्षी दर्शन — सर्दियों में प्रवासी प्रजातियां",
+    "pkg6_l4": "प्राचीन गढ़माता (कछुआ अंडे देने वाला) समुद्र तट तक ट्रेक",
+    "pkg6_l5": "9वीं सदी के लोटस मंदिर का दौरा",
+    "pkg6_l6": "वन परमिट, गाइड और इको-रिसॉर्ट ठहराव शामिल",
+    "btn_book": "यह टूर बुक करें",
+    "btn_enquire": "WhatsApp पर पूछताछ",
+    "fleet_head": "आराम से यात्रा करें",
+    "fleet_title": "हमारा बेड़ा",
+    "fleet_sub": "अपने समूह के आकार और बजट के अनुसार सही वाहन चुनें। सभी कैब AC, सैनिटाइज़्ड और सत्यापित ड्राइवरों द्वारा चालित हैं।",
+    "fleet1_t": "Swift Dzire / सेडान",
+    "fleet1_seats": "4 + 1 सीट",
+    "fleet1_bags": "2 बैग",
+    "fleet1_ac": "AC शामिल",
+    "fleet1_best": "शहर और छोटे परिवार",
+    "fleet1_price": "₹12/किमी",
+    "fleet2_t": "Maruti Ertiga / SUV",
+    "fleet2_seats": "6 + 1 सीट",
+    "fleet2_bags": "3 बैग",
+    "fleet2_ac": "AC शामिल",
+    "fleet2_best": "छोटे समूह और हवाई अड्डा",
+    "fleet2_price": "₹15/किमी",
+    "fleet3_t": "Toyota Innova Crysta",
+    "fleet3_seats": "6 + 1 सीट",
+    "fleet3_bags": "4 बैग",
+    "fleet3_ac": "AC शामिल",
+    "fleet3_best": "प्रीमियम आराम और लंबी यात्रा",
+    "fleet3_price": "₹18/किमी",
+    "fleet4_t": "Force Tempo Traveller",
+    "fleet4_seats": "12 + 1 सीट",
+    "fleet4_bags": "6 बैग",
+    "fleet4_ac": "AC शामिल",
+    "fleet4_best": "बड़े समूह और परिवार टूर",
+    "fleet4_price": "₹22/किमी",
+    "fleet_btn": "यह कैब बुक करें",
+    "cust_head": "आपके लिए विशेष",
+    "cust_title": "अपना खुद का टूर बनाएं",
+    "cust_sub": "उन गंतव्यों का चयन करें जहां आप जाना चाहते हैं, और हम पारदर्शी कोट के साथ सही यात्रा कार्यक्रम तैयार करेंगे।",
+    "sum_title": "आपका कस्टम इटिनरेरी",
+    "sum_empty": "अभी तक कोई गंतव्य नहीं चुना गया है। अपने टूर में जगहें जोड़ने के लिए बाईं ओर कार्ड पर क्लिक करें।",
+    "sum_btn": "WhatsApp पर पूछताछ भेजें",
+    "gallery_head": "ओडिशा के पल",
+    "gallery_title": "फोटो गैलरी",
+    "gallery_sub": "एक झलक जो आपका इंतज़ार कर रही है — मंदिर, समुद्र तट, वन्यजीव और संस्कृति।",
+    "testi_head": "असली यात्री, असली कहानियां",
+    "testi_title": "हमारे मेहमान क्या कहते हैं",
+    "testi_sub": "5000 से अधिक खुश यात्री हमारे साथ ओडिशा घूम चुके हैं।",
+    "faq_head": "त्वरित उत्तर",
+    "faq_title": "अक्सर पूछे जाने वाले सवाल",
+    "faq_sub": "अपनी ओडिशा यात्रा बुक करने से पहले जानने योग्य सब कुछ।",
+    "faq1_q": "मैं कैब या टूर पैकेज कैसे बुक करूं?",
+    "faq1_a": "बस +91 84807 22669 पर कॉल करें या WhatsApp संदेश भेजें। अपनी यात्रा की तारीखें, पिकअप स्थान और पसंदीदा गंतव्य साझा करें। हम मिनटों में पारदर्शी कोट साझा करेंगे। पुष्टि के बाद, आपकी बुकिंग हो जाएगी।",
+    "faq2_q": "कैब के लिए प्रति किलोमीटर दर क्या है?",
+    "faq2_a": "सेडान ₹12/किमी, SUV ₹15/किमी, इनोवा ₹18/किमी, और टेम्पो ट्रैवलर ₹22/किमी से शुरू। फुल-डे टूर (8 घंटे/80 किमी) के लिए हम फिक्स्ड पैकेज दरें देते हैं जो प्रति-किमी से सस्ती होती हैं। न्यूनतम दैनिक बिलिंग लागू होती है। आउटस्टेशन ट्रिप में ड्राइवर भत्ता और टोल शामिल हैं।",
+    "faq3_q": "क्या लंबी यात्राओं के लिए दरें मोल-भाव योग्य हैं?",
+    "faq3_a": "हां। 3 दिन या उससे अधिक की यात्राओं के लिए, हम बंडल छूट के साथ कस्टम पैकेज देते हैं। अपनी अवधि और गंतव्य WhatsApp पर बताएं, हम सबसे अच्छी कीमत देंगे — कभी कोई छिपा हुआ शुल्क नहीं।",
+    "faq4_q": "क्या मैं फिक्स्ड टूर पैकेज को अनुकूलित कर सकता हूं?",
+    "faq4_a": "बिल्कुल। ऊपर दिए गए \"अपना खुद का टूर बनाएं\" सेक्शन का उपयोग करें और पुरी, कोणार्क, भुवनेश्वर और चिल्का में से गंतव्य चुनें। हम एक व्यक्तिगत इटिनरेरी तैयार करेंगे और WhatsApp पर कोट साझा करेंगे।",
+    "faq5_q": "क्या भुवनेश्वर से एयरपोर्ट पिकअप उपलब्ध है?",
+    "faq5_a": "हां, हम बीजू पटनायक अंतर्राष्ट्रीय हवाई अड्डे (भुवनेश्वर) पर पिकअप/ड्रॉप और पुरी, भुवनेश्वर, खुर्दा में रेलवे स्टेशन ट्रांसफर देते हैं। बुकिंग करते समय अपनी फ्लाइट/ट्रेन का समय बताएं।",
+    "faq6_q": "कैंसिलेशन पॉलिसी क्या है?",
+    "faq6_a": "पिकअप से 12 घंटे पहले तक मुफ्त कैंसिलेशन। 12 घंटे के भीतर, ₹500 का एक छोटा शुल्क लागू होता है। यदि ऑपरेटर द्वारा ट्रेन/उड़ान रद्द की जाती है, तो पूरा रिफंड प्रोसेस होता है।",
+    "faq7_q": "क्या ड्राइवर मंदिर दर्शन के समय से परिचित हैं?",
+    "faq7_a": "हां, हमारे सभी ड्राइवर लोकल हैं जो जगन्नाथ मंदिर, लिंगराज और कोणार्क में दर्शन के समय, विशेष आरती स्लॉट और भीड़-भाड़ से बचने के समय से परिचित हैं।",
+    "faq8_q": "क्या आप ठहराव और भोजन का भी प्रबंध करते हैं?",
+    "faq8_a": "हां, मल्टी-डे पैकेज के लिए हम पुरी, भुवनेश्वर, कोणार्क और चिल्का में सत्यापित होटल और होमस्टे के साथ साझेदारी करते हैं। शाकाहारी ओडिया थाली और समुद्री भोजन का पूर्व-प्रबंध किया जा सकता है।",
+    "map_head": "हमारे कार्यालय पर आएं",
+    "map_title": "पुरी में हमें खोजें",
+    "footer_about": "ओडिशा की दिव्य और प्राकृतिक सुंदरता का पता लगाने के लिए पुरी में आपका विश्वसनीय स्थानीय साथी। हम ऐसी यादें बनाते हैं जो जीवन भर रहती हैं।",
+    "footer_contact": "संपर्क करें",
+    "footer_address": "सी.टी. रोड, पुरी (यूथ हॉस्टल बस पार्किंग के पास)",
+    "footer_info": "व्यवसाय की जानकारी",
+    "footer_reg": "सरकारी पंजीकृत संख्या:",
+    "footer_owner": "मालिक",
+    "footer_hours": "कार्यालय समय: रोज़ सुबह 6 – रात 10 बजे",
+    "footer_quick": "त्वरित लिंक",
+    "footer_connect": "हमसे जुड़ें",
+    "d_jagannath": "जगन्नाथ मंदिर",
+    "d_konark": "कोणार्क सूर्य मंदिर",
+    "d_lingaraj": "लिंगराज मंदिर",
+    "d_mukteswar": "मुक्तेश्वर मंदिर",
+    "d_sidheswar": "सिद्धेश्वर मंदिर",
+    "d_alarnath": "अलारनाथ मंदिर",
+    "d_chilika": "चिल्का डॉल्फिन पॉइंट",
+    "d_nandankanan": "नंदनकानन चिड़ियाघर",
+    "d_khandagiri": "खंडगिरी और उदयगिरी",
+    "d_dhauli": "धौली गिरी स्तूप",
+    "d_puri_beach": "पुरी गोल्डन बीच",
+    "d_chandrabhaga": "चंद्रभागा बीच",
+    "d_sea_mouth": "सी माउथ",
+    "d_red_crab": "रेड क्रैब पॉइंट",
+    "z_puri": "पुरी",
+    "z_konark": "कोणार्क",
+    "z_bbsr": "भुवनेश्वर",
+    "z_satapada": "सतपाडा",
+    "z_chilika": "चिल्का",
+    "wa_msg": "नमस्ते प्रदीप प्रधान,\n\nमैं एक *कस्टम टूर पैकेज* बनाना चाहता हूँ।\n\nकृपया मेरी यात्रा में इन गंतव्यों को शामिल करें:\n",
+    "wa_end": "\nकृपया एक कोट और समय अनुमान साझा करें। धन्यवाद!"
+  },
+  "bn": {
+    "nav_home": "হোম",
+    "nav_packages": "ট্যুর প্যাকেজ",
+    "nav_fleet": "আমাদের গাড়ি",
+    "nav_custom": "কাস্টম ট্যুর",
+    "nav_gallery": "গ্যালারি",
+    "nav_faq": "প্রশ্নোত্তর",
+    "nav_contact": "যোগাযোগ",
+    "nav_call": "এখনই কল করুন",
+    "hero_badge": "সরকারি নিবন্ধিত নম্বর: 26201700144/2017",
+    "hero_title": "ওড়িশার আত্মা <span>আবিষ্কার করুন</span>",
+    "hero_sub": "পুরীর পবিত্র সমুদ্র সৈকত থেকে কোণার্কের স্থাপত্য বিস্ময় পর্যন্ত। শ্রী গণেশ ট্যুর অ্যান্ড ট্রাভেলসের সাথে প্রিমিয়াম ট্যাক্সি এবং সুসংগঠিত ভ্রমণ — ২০১৭ সাল থেকে আপনার বিশ্বস্ত সঙ্গী।",
+    "hero_btn1": "প্যাকেজ দেখুন",
+    "hero_btn2": "কাস্টম ট্যুর তৈরি করুন",
+    "hero_stat1": "৮+ বছর",
+    "hero_stat1_l": "অভিজ্ঞতা",
+    "hero_stat2": "৫০০০+",
+    "hero_stat2_l": "খুশি ভ্রমণকারী",
+    "hero_stat3": "৪.৯★",
+    "hero_stat3_l": "রেটিং",
+    "hero_stat4": "২৪×৭",
+    "hero_stat4_l": "সহায়তা",
+    "why_head": "ভ্রমণকারীরা কেন আমাদের বিশ্বাস করেন",
+    "why_title": "শ্রী গণেশের সুবিধা",
+    "why_sub": "ছয়টি কারণ কেন সারা ভারতের পরিবার ওড়িশা ভ্রমণের জন্য আমাদের বেছে নেন।",
+    "why1_t": "সরকারি নিবন্ধিত",
+    "why1_d": "লাইসেন্সপ্রাপ্ত ট্যুর অপারেটর (Regd. No. 26201700144/2017) সব প্রয়োজনীয় পারমিট এবং বীমা সহ।",
+    "why2_t": "যাচাইকৃত স্থানীয় ড্রাইভার",
+    "why2_d": "অভিজ্ঞ, বিনয়ী ড্রাইভার যারা ওড়িশার প্রতিটি মন্দির, সমুদ্র সৈকত এবং শর্টকাট চেনেন।",
+    "why3_t": "স্বচ্ছ মূল্য নির্ধারণ",
+    "why3_d": "কোনও লুকানো চার্জ নেই। বুকিং নিশ্চিত করার আগে WhatsApp-এ নির্দিষ্ট হার শেয়ার করা হয়।",
+    "why4_t": "ভালোভাবে রক্ষণাবেক্ষণ করা ফ্লিট",
+    "why4_d": "স্যানিটাইজড AC ক্যাব — প্রতিটি গ্রুপের আকারের জন্য সেডান, SUV, ইনোভা এবং টেম্পো ট্রাভেলার।",
+    "why5_t": "২৪×৭ রাস্তার সহায়তা",
+    "why5_d": "কোথাও আটকে আছেন? যেকোনও সময় কল করুন। আমরা প্রতিদিন, সারাদিন পাওয়া যাই।",
+    "why6_t": "কাস্টম ইটিনারারি",
+    "why6_d": "১৪+ গন্তব্য থেকে বেছে নিন এবং আমরা আপনার বাজেটে একটি ব্যক্তিগত ট্যুর তৈরি করব।",
+    "pkg_head": "হাতে তৈরি ভ্রমণসূচি",
+    "pkg_title": "আমাদের সেরা বিক্রি হওয়া ট্যুর",
+    "pkg_sub": "ওড়িশায় ৮+ বছরের গাইডিংয়ের পর প্রদীপ প্রধান দ্বারা তৈরি।",
+    "pkg1_title": "পুরী ও কোণার্ক এক্সপ্রেস",
+    "pkg1_sub": "সারাদিনের হেরিটেজ ট্যুর",
+    "pkg1_dur": "১ দিন · ৮ ঘণ্টা",
+    "pkg1_l1": "চন্দ্রভাগা সমুদ্র সৈকত",
+    "pkg1_l2": "কোণার্ক সূর্য মন্দির",
+    "pkg1_l3": "ধৌলি গিরি (শান্তি স্তূপ)",
+    "pkg1_l4": "লিঙ্গরাজ ও মুক্তেশ্বর মন্দির",
+    "pkg1_l5": "খণ্ডগিরি ও উদয়গিরি গুহা",
+    "pkg1_l6": "নন্দনকানন চিড়িয়াখানা ও ভুবনেশ্বর শহর",
+    "pkg2_title": "চিলিকা ডলফিন স্পেশাল",
+    "pkg2_sub": "প্রকৃতি ও বন্যপ্রাণী ভ্রমণ",
+    "pkg2_dur": "১ দিন · ৯ ঘণ্টা",
+    "pkg2_l1": "চিলিকা হ্রদে নৌকা ভ্রমণ",
+    "pkg2_l2": "ডলফিন পয়েন্ট (সাতাপাড়া)",
+    "pkg2_l3": "সি মাউথ ভিউ পয়েন্ট",
+    "pkg2_l4": "রেড ক্র্যাব বিচ পয়েন্ট",
+    "pkg2_l5": "আলারনাথ মন্দির দর্শন",
+    "pkg2_l6": "তাজা সামুদ্রিক খাবার দুপুরের খাবারে",
+    "pkg3_title": "গোল্ডেন ট্রায়াঙ্গল ট্যুর",
+    "pkg3_sub": "ভুবনেশ্বর · পুরী · কোণার্ক",
+    "pkg3_dur": "২ দিন · ১ রাত",
+    "pkg3_l1": "দিন ১: ভুবনেশ্বর মন্দির — লিঙ্গরাজ, মুক্তেশ্বর, রাজারানি",
+    "pkg3_l2": "দিন ১: খণ্ডগিরি ও উদয়গিরি গুহা + ধৌলি স্তূপ",
+    "pkg3_l3": "দিন ২: কোণার্ক সূর্য মন্দির ও চন্দ্রভাগা বিচ",
+    "pkg3_l4": "দিন ২: জগন্নাথ মন্দির দর্শন + পুরী বিচ",
+    "pkg3_l5": "দিন ২: সন্ধ্যায় পুরী গোল্ডেন বিচে",
+    "pkg3_l6": "আরামদায়ক AC থাকা + সব ট্রান্সফার অন্তর্ভুক্ত",
+    "pkg4_title": "উপজাতি ওড়িশা অভিযান",
+    "pkg4_sub": "কোরাপুট · জয়পুর · রায়গড়া",
+    "pkg4_dur": "৪ দিন · ৩ রাত",
+    "pkg4_l1": "খাঁটি ডোংরিয়া কোন্ধ ও বোন্দা উপজাতি বাজার",
+    "pkg4_l2": "কোরাপুট উপত্যকার দূরবর্তী গ্রামে ট্রেক",
+    "pkg4_l3": "দেওমালি — ওড়িশার সর্বোচ্চ শৃঙ্গে সূর্যাস্ত",
+    "pkg4_l4": "লামতাপুতে কফি বাগান ভ্রমণ",
+    "pkg4_l5": "ঐতিহ্যবাহী ওড়িয়া খাবারের সাথে ইকো-রিসোর্টে থাকা",
+    "pkg4_l6": "স্থানীয় দোভাষীর সাথে ফটোগ্রাফার-বান্ধব ইটিনারারি",
+    "pkg5_title": "বৌদ্ধ সার্কিট ট্যুর",
+    "pkg5_sub": "ওড়িশার ডায়মন্ড ট্রায়াঙ্গল",
+    "pkg5_dur": "১ দিন · ৭ ঘণ্টা",
+    "pkg5_l1": "ললিতগিরি — প্রাচীন বৌদ্ধ বিশ্ববিদ্যালয় ধ্বংসাবশেষ",
+    "pkg5_l2": "রত্নগিরি — বিশাল মঠ ও স্তূপ",
+    "pkg5_l3": "উদয়গিরি — পাথর কাটা বৌদ্ধ গুহা",
+    "pkg5_l4": "লাঙ্গুড়ি পাহাড় — প্রাচীন নিদর্শন ও শিলালিপি",
+    "pkg5_l5": "পুষ্পগিরি মঠ পরিদর্শন",
+    "pkg5_l6": "ঐতিহাসিক প্রেক্ষাপট সহ গাইডেড ট্যুর",
+    "pkg6_title": "ভিতরকনিকা বন্যপ্রাণী",
+    "pkg6_sub": "ম্যানগ্রোভ ও কুমির সাফারি",
+    "pkg6_dur": "২ দিন · ১ রাত",
+    "pkg6_l1": "এশিয়ার দ্বিতীয় বৃহত্তম ম্যানগ্রোভ বনে নৌকা সাফারি",
+    "pkg6_l2": "ভিতরকনিকা খাঁড়িতে লবণাক্ত জলের কুমির দেখা",
+    "pkg6_l3": "পাখি দেখা — শীতে অভিবাসী প্রজাতি",
+    "pkg6_l4": "প্রাচীন গড়মাতা (কচ্ছপ ডিম পাড়া) সমুদ্র সৈকতে ট্রেক",
+    "pkg6_l5": "৯ম শতাব্দীর লোটাস মন্দির পরিদর্শন",
+    "pkg6_l6": "বন পারমিট, গাইড ও ইকো-রিসোর্ট থাকা অন্তর্ভুক্ত",
+    "btn_book": "এই ট্যুর বুক করুন",
+    "btn_enquire": "WhatsApp-এ জিজ্ঞাসা করুন",
+    "fleet_head": "আরামে ভ্রমণ করুন",
+    "fleet_title": "আমাদের ফ্লিট",
+    "fleet_sub": "আপনার গ্রুপের আকার এবং বাজেট অনুযায়ী সঠিক যানবাহন বেছে নিন। সব ক্যাব AC, স্যানিটাইজড এবং যাচাইকৃত ড্রাইভার দ্বারা চালিত।",
+    "fleet1_t": "Swift Dzire / সেডান",
+    "fleet1_seats": "৪ + ১ আসন",
+    "fleet1_bags": "২ ব্যাগ",
+    "fleet1_ac": "AC অন্তর্ভুক্ত",
+    "fleet1_best": "শহর ও ছোট পরিবার",
+    "fleet1_price": "₹১২/কিমি",
+    "fleet2_t": "Maruti Ertiga / SUV",
+    "fleet2_seats": "৬ + ১ আসন",
+    "fleet2_bags": "৩ ব্যাগ",
+    "fleet2_ac": "AC অন্তর্ভুক্ত",
+    "fleet2_best": "ছোট গ্রুপ ও বিমানবন্দর",
+    "fleet2_price": "₹১৫/কিমি",
+    "fleet3_t": "Toyota Innova Crysta",
+    "fleet3_seats": "৬ + ১ আসন",
+    "fleet3_bags": "৪ ব্যাগ",
+    "fleet3_ac": "AC অন্তর্ভুক্ত",
+    "fleet3_best": "প্রিমিয়াম আরাম ও দীর্ঘ ভ্রমণ",
+    "fleet3_price": "₹১৮/কিমি",
+    "fleet4_t": "Force Tempo Traveller",
+    "fleet4_seats": "১২ + ১ আসন",
+    "fleet4_bags": "৬ ব্যাগ",
+    "fleet4_ac": "AC অন্তর্ভুক্ত",
+    "fleet4_best": "বড় গ্রুপ ও পরিবার ট্যুর",
+    "fleet4_price": "₹২২/কিমি",
+    "fleet_btn": "এই ক্যাব বুক করুন",
+    "cust_head": "আপনার জন্য বিশেষ",
+    "cust_title": "নিজের ট্যুর তৈরি করুন",
+    "cust_sub": "আপনি যে গন্তব্যগুলিতে যেতে চান তা নির্বাচন করুন এবং আমরা স্বচ্ছ কোট সহ নিখুঁত ভ্রমণসূচি তৈরি করব।",
+    "sum_title": "আপনার কাস্টম ভ্রমণসূচি",
+    "sum_empty": "এখনও কোনও গন্তব্য নির্বাচন করা হয়নি। আপনার ট্যুরে জায়গা যোগ করতে বাম দিকের কার্ডে ক্লিক করুন।",
+    "sum_btn": "WhatsApp-এ জিজ্ঞাসা পাঠান",
+    "gallery_head": "ওড়িশার মুহূর্ত",
+    "gallery_title": "ফটো গ্যালারি",
+    "gallery_sub": "এক ঝলক যা আপনার অপেক্ষায় — মন্দির, সমুদ্র সৈকত, বন্যপ্রাণী ও সংস্কৃতি।",
+    "testi_head": "আসল ভ্রমণকারী, আসল গল্প",
+    "testi_title": "আমাদের অতিথিরা কী বলেন",
+    "testi_sub": "৫০০০+ খুশি ভ্রমণকারী আমাদের সাথে ওড়িশা ঘুরেছেন।",
+    "faq_head": "দ্রুত উত্তর",
+    "faq_title": "সাধারণ জিজ্ঞাসা",
+    "faq_sub": "আপনার ওড়িশা ট্যুর বুক করার আগে যা জানা দরকার।",
+    "faq1_q": "আমি কীভাবে ক্যাব বা ট্যুর প্যাকেজ বুক করব?",
+    "faq1_a": "শুধু +91 84807 22669-এ কল করুন বা WhatsApp বার্তা পাঠান। আপনার ভ্রমণের তারিখ, পিকআপ অবস্থান এবং পছন্দের গন্তব্য শেয়ার করুন। আমরা মিনিটের মধ্যে একটি স্বচ্ছ কোট শেয়ার করব।",
+    "faq2_q": "ক্যাবের প্রতি কিলোমিটার হার কত?",
+    "faq2_a": "সেডান ₹12/কিমি, SUV ₹15/কিমি, ইনোভা ₹18/কিমি, এবং টেম্পো ট্রাভেলার ₹22/কিমি থেকে শুরু। ফুল-ডে ট্যুর (৮ ঘণ্টা/৮০ কিমি) এর জন্য আমরা ফিক্সড প্যাকেজ হার দিই যা প্রতি-কিমি থেকে সস্তা।",
+    "faq3_q": "দীর্ঘ ভ্রমণের জন্য হার কি নিগোশিয়েবল?",
+    "faq3_a": "হ্যাঁ। ৩ দিন বা তার বেশি ভ্রমণের জন্য, আমরা বান্ডল ছাড় সহ কাস্টম প্যাকেজ দিই। আপনার সময়কাল এবং গন্তব্য WhatsApp-এ উল্লেখ করুন।",
+    "faq4_q": "আমি কি ফিক্সড ট্যুর প্যাকেজ কাস্টমাইজ করতে পারি?",
+    "faq4_a": "অবশ্যই। উপরের \"নিজের ট্যুর তৈরি করুন\" বিভাগ ব্যবহার করুন এবং পুরী, কোণার্ক, ভুবনেশ্বর ও চিলিকা থেকে গন্তব্য বেছে নিন।",
+    "faq5_q": "ভুবনেশ্বর থেকে কি বিমানবন্দর পিকআপ আছে?",
+    "faq5_a": "হ্যাঁ, আমরা বিজু পটনায়েক আন্তর্জাতিক বিমানবন্দর (ভুবনেশ্বর)-এ পিকআপ/ড্রপ এবং পুরী, ভুবনেশ্বর, খুর্দা রেলওয়ে স্টেশন ট্রান্সফার দিই।",
+    "faq6_q": "ক্যানসেলেশন পলিসি কী?",
+    "faq6_a": "পিকআপের ১২ ঘণ্টা আগে পর্যন্ত ফ্রি ক্যানসেলেশন। ১২ ঘণ্টার মধ্যে, ₹500 এর একটি ছোট চার্জ প্রযোজ্য।",
+    "faq7_q": "ড্রাইভাররা কি মন্দির দর্শনের সময় জানেন?",
+    "faq7_a": "হ্যাঁ, আমাদের সব ড্রাইভার স্থানীয় যারা জগন্নাথ মন্দির, লিঙ্গরাজ ও কোণার্কে দর্শনের সময় জানেন।",
+    "faq8_q": "আপনারা কি থাকা ও খাবারেরও ব্যবস্থা করেন?",
+    "faq8_a": "হ্যাঁ, মাল্টি-ডে প্যাকেজের জন্য আমরা যাচাইকৃত হোটেল ও হোমস্টে-এর সাথে পার্টনারশিপ করি। নিরামিষ ওড়িয়া থালি ও সামুদ্রিক খাবার প্রি-অ্যারেঞ্জ করা যায়।",
+    "map_head": "আমাদের অফিসে আসুন",
+    "map_title": "পুরীতে আমাদের সন্ধান করুন",
+    "footer_about": "ওড়িশার ঐশ্বরিক ও প্রাকৃতিক সৌন্দর্য অন্বেষণের জন্য পুরীতে আপনার বিশ্বস্ত স্থানীয় সঙ্গী। আমরা এমন স্মৃতি তৈরি করি যা সারাজীবন থাকে।",
+    "footer_contact": "যোগাযোগ করুন",
+    "footer_address": "সি.টি রোড, পুরী (ইয়ুথ হোস্টেল বাস পার্কিংয়ের কাছে)",
+    "footer_info": "ব্যবসার তথ্য",
+    "footer_reg": "সরকারি নিবন্ধিত নম্বর:",
+    "footer_owner": "মালিক",
+    "footer_hours": "অফিস সময়: প্রতিদিন সকাল ৬ – রাত ১০",
+    "footer_quick": "দ্রুত লিঙ্ক",
+    "footer_connect": "আমাদের সাথে যুক্ত হন",
+    "d_jagannath": "জগন্নাথ মন্দির",
+    "d_konark": "কোণার্ক সূর্য মন্দির",
+    "d_lingaraj": "লিঙ্গরাজ মন্দির",
+    "d_mukteswar": "মুক্তেশ্বর মন্দির",
+    "d_sidheswar": "সিদ্ধেশ্বর মন্দির",
+    "d_alarnath": "আলারনাথ মন্দির",
+    "d_chilika": "চিলিকা ডলফিন পয়েন্ট",
+    "d_nandankanan": "নন্দনকানন চিড়িয়াখানা",
+    "d_khandagiri": "খণ্ডগিরি ও উদয়গিরি",
+    "d_dhauli": "ধৌলি গিরি স্তূপ",
+    "d_puri_beach": "পুরী গোল্ডেন বিচ",
+    "d_chandrabhaga": "চন্দ্রভাগা বিচ",
+    "d_sea_mouth": "সি মাউথ",
+    "d_red_crab": "রেড ক্র্যাব পয়েন্ট",
+    "z_puri": "পুরী",
+    "z_konark": "কোণার্ক",
+    "z_bbsr": "ভুবনেশ্বর",
+    "z_satapada": "সাতাপাড়া",
+    "z_chilika": "চিলিকা",
+    "wa_msg": "নমস্কার প্রদীপ প্রধান,\n\nআমি একটি *কাস্টম ট্যুর প্যাকেজ* তৈরি করতে চাই।\n\nঅনুগ্রহ করে আমার ভ্রমণে এই গন্তব্যগুলি অন্তর্ভুক্ত করুন:\n",
+    "wa_end": "\nঅনুগ্রহ করে একটি কোট এবং সময় অনুমান শেয়ার করুন। ধন্যবাদ!"
+  }
+};
+
+// INTRO ANIMATION & SOUNDS
+function playIntro() {
+  const introScreen = document.getElementById('intro-screen');
+  const carSound = document.getElementById('carSound');
+  carSound.volume = 0.4;
+  carSound.play().catch(e => console.log("Audio autoplay blocked"));
+  setTimeout(() => {
+    introScreen.classList.add('hide');
+    setTimeout(() => { introScreen.style.display = 'none'; }, 1000);
+  }, 3500);
+}
+
+// CLICK SOUND
+const clickSound = document.getElementById('clickSound');
+clickSound.volume = 0.25;
+let lastClickTime = 0;
+document.addEventListener('click', () => {
+  const now = Date.now();
+  if (now - lastClickTime > 200) {
+    clickSound.currentTime = 0;
+    clickSound.play().catch(e => {});
+    lastClickTime = now;
+  }
+});
+
+// CUSTOM CURSOR
+const cursor = document.getElementById('cursor');
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+function attachHover() {
+  document.querySelectorAll('a, button, .dest-select-card, .gallery-item, .faq-q, .package-card, .fleet-card, .why-card').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+  });
+}
+attachHover();
+
+// 3D TILT
+function tilt(e, el) {
+  const rect = el.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  const rotateX = ((y - rect.height/2) / (rect.height/2)) * -8;
+  const rotateY = ((x - rect.width/2) / (rect.width/2)) * 8;
+  el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+}
+function resetTilt(el) {
+  el.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+}
+
+// LANGUAGE
+let currentLang = 'en';
+let selectedDestinations = [];
+
+function setLang(lang, e) {
+  if(e) e.preventDefault();
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  const target = e && e.target ? e.target : document.querySelector(`.lang-btn[onclick*="'${lang}'"]`);
+  if (target) target.classList.add('active');
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+  // Inject testimonial texts
+  for (let i = 1; i <= 6; i++) {
+    const el = document.querySelector(`[data-i18n="testi${i}"]`);
+    if (el && TESTI_TEXTS[lang] && TESTI_TEXTS[lang]['testi'+i]) {
+      el.textContent = TESTI_TEXTS[lang]['testi'+i];
+    }
+  }
+  if (selectedDestinations.length > 0) updateSummary();
+}
+
+// SCROLL
+window.onscroll = function() {
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("progress-bar").style.width = scrolled + "%";
+  const navbar = document.getElementById("navbar");
+  if (winScroll > 50) navbar.classList.add('scrolled');
+  else navbar.classList.remove('scrolled');
+  reveal();
+};
+
+function reveal() {
+  const reveals = document.querySelectorAll(".reveal");
+  for (let i = 0; i < reveals.length; i++) {
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    if (elementTop < window.innerHeight - 80) reveals[i].classList.add("active");
+  }
+}
+window.addEventListener("scroll", reveal);
+reveal();
+
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+
+// CUSTOM TOUR BUILDER
+function toggleDest(element) {
+  const destId = element.getAttribute('data-id');
+  element.classList.toggle('selected');
+  if (element.classList.contains('selected')) {
+    selectedDestinations.push(destId);
+  } else {
+    selectedDestinations = selectedDestinations.filter(item => item !== destId);
+  }
+  updateSummary();
+}
+
+function updateSummary() {
+  const list = document.getElementById('selectedList');
+  const emptyMsg = document.getElementById('emptyMsg');
+  const waBtn = document.getElementById('waBtn');
+  list.innerHTML = '';
+  if (selectedDestinations.length === 0) {
+    emptyMsg.style.display = 'block';
+    waBtn.disabled = true;
+  } else {
+    emptyMsg.style.display = 'none';
+    waBtn.disabled = false;
+    selectedDestinations.forEach(destId => {
+      const li = document.createElement('li');
+      const translatedName = translations[currentLang][destId] || destId;
+      li.innerHTML = `${translatedName} <span>✓</span>`;
+      list.appendChild(li);
+    });
+  }
+}
+
+function sendWhatsApp() {
+  if (selectedDestinations.length === 0) return;
+  const phone = "918480722669";
+  let message = translations[currentLang].wa_msg;
+  selectedDestinations.forEach((destId, index) => {
+    const translatedName = translations[currentLang][destId];
+    message += `${index + 1}. ${translatedName}\n`;
+  });
+  message += translations[currentLang].wa_end;
+  const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  window.open(waUrl, '_blank');
+}
+
+// GALLERY LIGHTBOX
+function openLightbox(idx) {
+  currentLightboxIdx = idx;
+  document.getElementById('lightboxImg').src = GALLERY_IMAGES[idx];
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeLightboxBg(e) {
+  if (e.target.id === 'lightbox') closeLightbox();
+}
+function navLightbox(dir) {
+  currentLightboxIdx = (currentLightboxIdx + dir + GALLERY_IMAGES.length) % GALLERY_IMAGES.length;
+  document.getElementById('lightboxImg').src = GALLERY_IMAGES[currentLightboxIdx];
+}
+document.addEventListener('keydown', (e) => {
+  if (document.getElementById('lightbox').classList.contains('open')) {
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') navLightbox(-1);
+    if (e.key === 'ArrowRight') navLightbox(1);
+  }
+});
+
+// FAQ
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+
+// INIT
+window.addEventListener('load', () => {
+  setLang('en');
+  setTimeout(attachHover, 500);
+});
+</script>
+</body>
+</html>
